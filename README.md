@@ -1,7 +1,7 @@
 # Sheppard
 An AI Agent system specifically for Ollama built using only OS materials, with advanced memory functions and tool calling
 ########################################################
-The overarching goal of this project is to create an advanced memory and learning system that integrates multiple technologies for handling complex data interactions. This system aims to simulate human-like memory by combining Redis for short-term memory, PostgreSQL for long-term memory storage, and ChromaDB for vector-based querying and embedding storage. It also uses a modified version of trustfall (https://github.com/obi1kenobi/trustfall/tree/main) for the purpose of memory handling and function calling.
+The overarching goal of this project is to create an advanced memory and learning system that integrates multiple technologies for handling complex data interactions. This system aims to simulate human-like memory by combining Redis for short-term memory, PostgreSQL for long-term memory storage, and ChromaDB for vector-based querying and embedding storage. It also uses a modified version of trustcall (https://github.com/hinthornw/trustcall) for the purpose of memory handling and function calling.
 
 The project is primarily focused on Ollama to process, analyze, and generate embeddings from user inputs, enabling contextual understanding. The goal is to facilitate an iterative learning process where tasks are broken down, automated, and improved upon over time, with memories being stored, queried, and updated dynamically.
 
