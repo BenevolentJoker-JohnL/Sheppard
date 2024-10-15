@@ -7,6 +7,8 @@ The project is primarily focused on Ollama to process, analyze, and generate emb
 
 Ultimately, the system strives to support high-level automation and memory management, continuously refining its responses and strategies based on user interactions and past experiences. This could be used in applications that require intelligent, long-term interaction capabilities, such as personal assistants or adaptive AI systems.
 
+The end goal should be something like this: you have a main agent that can be used as itself, or if a different model is desired, it can be loaded into the application with the main agent conducting function calls and relaying information back and fourth from the loaded model and the user-- all the while, because the main agent is processing whats occuring, its logging and expanding its knowledge base while allowing for optimal performance on tasks -- cause lets face it, not all models are equal.
+
 Ideally, I'd like to use this to create a system that brings OS LLM models to the forefront and gives almost anyone the ability to have their own personalized AI agent, with minimal external calls. 
 
 This is a work in progress. If this is of any interest to you, please feel free to reach out to me via email "benevolentjoker@gmail.com"
