@@ -17,9 +17,10 @@ def install_packages():
     run_command("sudo apt update")
     run_command("sudo apt install -y redis-server postgresql")
 
-def setup_redis(redis_instances):
+def setup_redis():
     print("Setting up Redis...")
-    for i, db_name in enumerate(redis_instances):
+    redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
+    for i, db_name in enumerate(redis_dbs):
         port = 6370 + i
         config_file = f"/etc/redis/redis-{port}.conf"
         run_command(f"sudo cp /etc/redis/redis.conf {config_file}")
@@ -53,9 +54,10 @@ WantedBy=multi-user.target
         run_command(f"sudo systemctl enable redis-{port}.service")
         run_command(f"sudo systemctl start redis-{port}.service")
 
-def verify_redis_services(redis_instances):
+def verify_redis_services():
     print("Verifying Redis services...")
-    for i, db_name in enumerate(redis_instances):
+    redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
+    for i, db_name in enumerate(redis_dbs):
         port = 6370 + i
         service_name = f"redis-{port}.service"
         
@@ -75,100 +77,130 @@ def database_exists(db_name):
     result = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_database WHERE datname='{db_name.lower()}'\"")
     return result == "1"
 
-def drop_existing_postgres_data(user_name, databases):
+def user_exists(user_name):
+    result = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_roles WHERE rolname='{user_name}';\"")
+    return result == "1"
+
+def drop_existing_postgres_data():
     print("Dropping existing PostgreSQL databases and tables if they exist...")
+
+    # Drop databases if they exist
+    databases = ["episodic_memory", "semantic_memory", "contextual_memory", "general_memory", "abstracted_memory"]
     for db in databases:
         if database_exists(db):
-            run_command(f"sudo -u postgres -i psql -c 'REVOKE ALL PRIVILEGES ON DATABASE {db} FROM {user_name};'")
+            run_command(f"sudo -u postgres -i psql -c 'REVOKE ALL PRIVILEGES ON DATABASE {db} FROM sheppard;'")
             run_command(f"sudo -u postgres -i psql -c 'DROP DATABASE IF EXISTS {db};'")
         else:
             print(f"Database '{db}' does not exist, skipping...")
 
-    # Revoke privileges on all objects before dropping the user if necessary
+    # Revoke privileges on all objects before dropping the user
     for db in databases:
         if database_exists(db):
-            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM {user_name};'")
-            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM {user_name};'")
-            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public FROM {user_name};'")
+            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL TABLES IN SCHEMA public FROM sheppard;'")
+            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM sheppard;'")
+            run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public FROM sheppard;'")
 
-def setup_postgresql(user_name, user_password, databases):
+def setup_postgresql():
     print("Setting up PostgreSQL...")
-    drop_existing_postgres_data(user_name, databases)
-    
+    drop_existing_postgres_data()  # Call the drop function before creating new data
+
     run_command("sudo systemctl enable postgresql")
     run_command("sudo systemctl start postgresql")
-    
-    # Create databases and user
+
+    # Create databases
+    databases = ["episodic_memory", "semantic_memory", "contextual_memory", "general_memory", "abstracted_memory"]
     for db in databases:
         run_command(f"sudo -u postgres -i psql -c 'CREATE DATABASE {db};'")
 
-    # Check if the user already exists before attempting to create it
-    user_exists = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_roles WHERE rolname='{user_name}'\"")
-    if user_exists != "1":
-        run_command(f"sudo -u postgres -i psql -c \"CREATE USER {user_name} WITH PASSWORD '{user_password}';\"")
-    
-    run_command(f"sudo -u postgres -i psql -c 'GRANT ALL PRIVILEGES ON DATABASE {', '.join(databases)} TO {user_name};'")
+    # Check if user exists before creating
+    if not user_exists("sheppard"):
+        run_command("sudo -u postgres -i psql -c \"CREATE USER sheppard WITH SUPERUSER PASSWORD '0000';\"")
+    else:
+        print("User 'sheppard' already exists, skipping creation...")
+
+    # Grant all privileges to the user
+    for db in databases:
+        run_command(f"sudo -u postgres -i psql -c 'GRANT ALL PRIVILEGES ON DATABASE {db} TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON SEQUENCES TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON FUNCTIONS TO sheppard;'")
+        run_command(f"sudo -u postgres -i psql -d {db} -c 'ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TYPES TO sheppard;'")
 
 def create_tables():
     print("Creating PostgreSQL tables...")
 
     run_command("""
-    sudo -u postgres -i psql -d interactionhistory -c "
-        CREATE TABLE IF NOT EXISTS interactions (
+    sudo -u postgres -i psql -d episodic_memory -c "
+        CREATE TABLE IF NOT EXISTS agent_interactions (
             id SERIAL PRIMARY KEY,
-            user_id VARCHAR(255) NOT NULL,
-            prompt TEXT NOT NULL,
+            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            agent_id TEXT NOT NULL,
+            input TEXT NOT NULL,
             response TEXT NOT NULL,
-            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+            entities JSONB,
+            topics JSONB
         );
-        CREATE INDEX IF NOT EXISTS idx_interactions_user_id ON interactions (user_id);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_agent_id ON agent_interactions (agent_id);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_timestamp ON agent_interactions (timestamp);
     "
     """)
 
     run_command("""
-    sudo -u postgres -i psql -d embeddings -c "
-        CREATE TABLE IF NOT EXISTS embeddings (
+    sudo -u postgres -i psql -d semantic_memory -c "
+        CREATE TABLE IF NOT EXISTS entity_relationships (
             id SERIAL PRIMARY KEY,
-            user_id VARCHAR(255) NOT NULL,
-            text TEXT NOT NULL,
-            embedding FLOAT[] NOT NULL,
-            dimension INTEGER NOT NULL,
+            entity TEXT NOT NULL,
+            related_entities JSONB,
+            context TEXT,
             timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
         );
-        CREATE INDEX IF NOT EXISTS idx_embeddings_user_id ON embeddings (user_id);
+        CREATE INDEX IF NOT EXISTS idx_entity_relationships_entity ON entity_relationships (entity);
     "
     """)
 
     run_command("""
-    sudo -u postgres -i psql -d metainfo -c "
-        CREATE TABLE IF NOT EXISTS metainfo (
+    sudo -u postgres -i psql -d contextual_memory -c "
+        CREATE TABLE IF NOT EXISTS recent_contexts (
             id SERIAL PRIMARY KEY,
-            user_id VARCHAR(255) NOT NULL,
-            key VARCHAR(255) NOT NULL,
-            value TEXT NOT NULL,
+            agent_id TEXT NOT NULL,
+            context_data JSONB,
             timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
         );
-        CREATE INDEX IF NOT EXISTS idx_metainfo_user_id_key ON metainfo (user_id, key);
+        CREATE INDEX IF NOT EXISTS idx_recent_contexts_agent_id ON recent_contexts (agent_id);
+        CREATE INDEX IF NOT EXISTS idx_recent_contexts_timestamp ON recent_contexts (timestamp);
+    "
+    """)
+
+    run_command("""
+    sudo -u postgres -i psql -d abstracted_memory -c "
+        CREATE TABLE IF NOT EXISTS abstracted_memories (
+            id SERIAL PRIMARY KEY,
+            agent_id TEXT NOT NULL,
+            abstraction_type TEXT NOT NULL,
+            content JSONB,
+            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+        );
+        CREATE INDEX IF NOT EXISTS idx_abstracted_memories_agent_id ON abstracted_memories (agent_id);
+        CREATE INDEX IF NOT EXISTS idx_abstracted_memories_abstraction_type ON abstracted_memories (abstraction_type);
     "
     """)
 
     print("All tables created successfully.")
 
 def main():
-    redis_instances = ['main', 'episodic', 'subconscious', 'global_workspace', 'stream']
-    databases = ['interactionhistory', 'embeddings', 'metainfo']
-    user_name = 'user_template'  # Replace with the actual user
-    user_password = 'password_template'  # Replace with the actual password
-
     install_packages()
-    setup_redis(redis_instances)
-    setup_postgresql(user_name, user_password, databases)
+    setup_redis()
+    setup_postgresql()
     create_tables()
-    verify_redis_services(redis_instances)
+    verify_redis_services()
     print("\nSetup completed successfully!")
     print("\nRedis instances are running on ports 6370-6374 and configured to start on boot.")
     print("PostgreSQL is running on the default port (5432) and configured to start on boot.")
     print("Databases and tables created successfully.")
+    print("\nAll privileges have been granted to the 'sheppard' user for all databases, tables, indexes, and future objects.")
 
 if __name__ == "__main__":
     main()
