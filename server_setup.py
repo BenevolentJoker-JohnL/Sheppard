@@ -2,6 +2,9 @@
 
 import subprocess
 import sys
+import os
+import shutil
+import time
 
 def run_command(command):
     process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
@@ -9,7 +12,7 @@ def run_command(command):
     if process.returncode != 0:
         print(f"Error executing command: {command}")
         print(error.decode())
-        sys.exit(1)
+        return False
     return output.decode().strip()
 
 def install_packages():
@@ -17,22 +20,75 @@ def install_packages():
     run_command("sudo apt update")
     run_command("sudo apt install -y redis-server postgresql")
 
+def cleanup_redis():
+    print("Cleaning up existing Redis instances...")
+    redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
+    
+    # Stop all Redis services and remove service files
+    for i, db_name in enumerate(redis_dbs):
+        port = 6370 + i
+        service_name = f"redis-{port}.service"
+        
+        # Stop and disable the service if it exists
+        run_command(f"sudo systemctl stop {service_name}")
+        run_command(f"sudo systemctl disable {service_name}")
+        
+        # Remove service file
+        if os.path.exists(f"/etc/systemd/system/{service_name}"):
+            run_command(f"sudo rm /etc/systemd/system/{service_name}")
+
+        # Remove config file
+        config_file = f"/etc/redis/redis-{port}.conf"
+        if os.path.exists(config_file):
+            run_command(f"sudo rm {config_file}")
+
+        # Clean up data directory
+        data_dir = f"/var/lib/redis/{port}"
+        if os.path.exists(data_dir):
+            run_command(f"sudo rm -rf {data_dir}")
+
+    # Reload systemd to recognize removed services
+    run_command("sudo systemctl daemon-reload")
+
 def setup_redis():
     print("Setting up Redis...")
+    cleanup_redis()  # Clean up before setup
+    
     redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
     for i, db_name in enumerate(redis_dbs):
         port = 6370 + i
-        config_file = f"/etc/redis/redis-{port}.conf"
-        run_command(f"sudo cp /etc/redis/redis.conf {config_file}")
-        run_command(f"sudo sed -i 's/^port 6379$/port {port}/' {config_file}")
-        run_command(f"sudo sed -i 's/^# maxmemory <bytes>$/maxmemory 100mb/' {config_file}")
-        run_command(f"sudo sed -i 's/^# maxmemory-policy noeviction$/maxmemory-policy allkeys-lru/' {config_file}")
         
-        # Configure persistence
-        run_command(f"sudo sed -i 's/^save 900 1$/save 60 1/' {config_file}")
-        run_command(f"sudo sed -i 's/^save 300 10$/save 30 10/' {config_file}")
-        run_command(f"sudo sed -i 's/^save 60 10000$/save 15 10000/' {config_file}")
-        run_command(f"sudo sed -i 's/^appendonly no$/appendonly yes/' {config_file}")
+        # Create data directory with proper permissions
+        data_dir = f"/var/lib/redis/{port}"
+        run_command(f"sudo mkdir -p {data_dir}")
+        run_command(f"sudo chown redis:redis {data_dir}")
+        run_command(f"sudo chmod 750 {data_dir}")
+        
+        # Create config file
+        config_file = f"/etc/redis/redis-{port}.conf"
+        config_content = f"""
+        port {port}
+        dir {data_dir}
+        maxmemory 100mb
+        maxmemory-policy allkeys-lru
+        
+        # Persistence configuration
+        save 60 1
+        save 30 10
+        save 15 10000
+        appendonly yes
+        appendfilename "appendonly.aof"
+        
+        # Basic security
+        protected-mode yes
+        bind 127.0.0.1
+        """
+        
+        with open("temp_redis.conf", "w") as f:
+            f.write(config_content)
+        run_command(f"sudo mv temp_redis.conf {config_file}")
+        run_command(f"sudo chown redis:redis {config_file}")
+        run_command(f"sudo chmod 644 {config_file}")
         
         # Create systemd service file
         service_file = f"/etc/systemd/system/redis-{port}.service"
@@ -41,8 +97,11 @@ Description=Redis In-Memory Data Store ({db_name}) on port {port}
 After=network.target
 
 [Service]
-ExecStart=/usr/bin/redis-server {config_file}
+Type=notify
+ExecStart=/usr/bin/redis-server {config_file} --supervised systemd
 ExecStop=/usr/bin/redis-cli -p {port} shutdown
+TimeoutStartSec=600
+TimeoutStopSec=300
 Restart=always
 User=redis
 Group=redis
@@ -50,28 +109,53 @@ Group=redis
 [Install]
 WantedBy=multi-user.target
 """
-        run_command(f"echo '{service_content}' | sudo tee {service_file} > /dev/null")
+        with open("temp_redis.service", "w") as f:
+            f.write(service_content)
+        run_command(f"sudo mv temp_redis.service {service_file}")
+        run_command(f"sudo chmod 644 {service_file}")
+        
+        # Reload systemd and start service
+        run_command("sudo systemctl daemon-reload")
         run_command(f"sudo systemctl enable redis-{port}.service")
         run_command(f"sudo systemctl start redis-{port}.service")
+        
+        # Wait for service to start
+        time.sleep(2)
 
 def verify_redis_services():
     print("Verifying Redis services...")
     redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
+    all_services_ok = True
+    
     for i, db_name in enumerate(redis_dbs):
         port = 6370 + i
         service_name = f"redis-{port}.service"
         
-        enabled_status = run_command(f"sudo systemctl is-enabled {service_name}")
-        if enabled_status == "enabled":
-            print(f"Redis service for {db_name} (port {port}) is enabled and will start on boot.")
-        else:
-            print(f"Warning: Redis service for {db_name} (port {port}) is not enabled for boot.")
+        # Check if service is enabled
+        enabled = run_command(f"sudo systemctl is-enabled {service_name}")
+        active = run_command(f"sudo systemctl is-active {service_name}")
         
-        active_status = run_command(f"sudo systemctl is-active {service_name}")
-        if active_status == "active":
-            print(f"Redis service for {db_name} (port {port}) is currently running.")
+        if enabled == "enabled" and active == "active":
+            print(f"✓ Redis service for {db_name} (port {port}) is running and enabled")
+            
+            # Verify connection
+            try:
+                result = run_command(f"redis-cli -p {port} ping")
+                if result == "PONG":
+                    print(f"  ✓ Successfully connected to Redis on port {port}")
+                else:
+                    print(f"  ✗ Could not connect to Redis on port {port}")
+                    all_services_ok = False
+            except Exception as e:
+                print(f"  ✗ Error testing Redis connection on port {port}: {str(e)}")
+                all_services_ok = False
         else:
-            print(f"Warning: Redis service for {db_name} (port {port}) is not currently running.")
+            print(f"✗ Redis service for {db_name} (port {port}) is not running properly")
+            print(f"  Enabled status: {enabled}")
+            print(f"  Active status: {active}")
+            all_services_ok = False
+    
+    return all_services_ok
 
 def database_exists(db_name):
     result = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_database WHERE datname='{db_name.lower()}'\"")
@@ -100,6 +184,10 @@ def drop_existing_postgres_data():
             run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public FROM sheppard;'")
             run_command(f"sudo -u postgres -i psql -d {db} -c 'REVOKE ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA public FROM sheppard;'")
 
+    # Drop the user if it exists
+    if user_exists("sheppard"):
+        run_command("sudo -u postgres -i psql -c 'DROP USER IF EXISTS sheppard;'")
+
 def setup_postgresql():
     print("Setting up PostgreSQL...")
     drop_existing_postgres_data()  # Call the drop function before creating new data
@@ -112,9 +200,9 @@ def setup_postgresql():
     for db in databases:
         run_command(f"sudo -u postgres -i psql -c 'CREATE DATABASE {db};'")
 
-    # Check if user exists before creating
+    # Create user with superuser privileges and password
     if not user_exists("sheppard"):
-        run_command("sudo -u postgres -i psql -c \"CREATE USER sheppard WITH SUPERUSER PASSWORD '0000';\"")
+        run_command("sudo -u postgres -i psql -c \"CREATE USER sheppard WITH SUPERUSER PASSWORD 'llama';\"")
     else:
         print("User 'sheppard' already exists, skipping creation...")
 
@@ -132,6 +220,7 @@ def setup_postgresql():
 def create_tables():
     print("Creating PostgreSQL tables...")
 
+    # Create tables in episodic_memory database
     run_command("""
     sudo -u postgres -i psql -d episodic_memory -c "
         CREATE TABLE IF NOT EXISTS agent_interactions (
@@ -148,6 +237,7 @@ def create_tables():
     "
     """)
 
+    # Create tables in semantic_memory database
     run_command("""
     sudo -u postgres -i psql -d semantic_memory -c "
         CREATE TABLE IF NOT EXISTS entity_relationships (
@@ -161,6 +251,7 @@ def create_tables():
     "
     """)
 
+    # Create tables in contextual_memory database
     run_command("""
     sudo -u postgres -i psql -d contextual_memory -c "
         CREATE TABLE IF NOT EXISTS recent_contexts (
@@ -174,6 +265,7 @@ def create_tables():
     "
     """)
 
+    # Create tables in abstracted_memory database
     run_command("""
     sudo -u postgres -i psql -d abstracted_memory -c "
         CREATE TABLE IF NOT EXISTS abstracted_memories (
@@ -190,17 +282,39 @@ def create_tables():
 
     print("All tables created successfully.")
 
+def cleanup_temp_files():
+    temp_files = ["temp_redis.conf", "temp_redis.service"]
+    for file in temp_files:
+        if os.path.exists(file):
+            os.remove(file)
+
 def main():
-    install_packages()
-    setup_redis()
-    setup_postgresql()
-    create_tables()
-    verify_redis_services()
-    print("\nSetup completed successfully!")
-    print("\nRedis instances are running on ports 6370-6374 and configured to start on boot.")
-    print("PostgreSQL is running on the default port (5432) and configured to start on boot.")
-    print("Databases and tables created successfully.")
-    print("\nAll privileges have been granted to the 'sheppard' user for all databases, tables, indexes, and future objects.")
+    success = True
+    try:
+        install_packages()
+        setup_redis()
+        if not verify_redis_services():
+            print("\n⚠️ Warning: Some Redis services are not running properly!")
+            success = False
+        
+        setup_postgresql()
+        create_tables()
+        
+        # Clean up any temporary files
+        cleanup_temp_files()
+        
+        if success:
+            print("\n✓ Setup completed successfully!")
+            print("\n✓ Redis instances are running on ports 6370-6374 and configured to start on boot.")
+            print("✓ PostgreSQL is running on the default port (5432) and configured to start on boot.")
+            print("✓ Databases and tables created successfully.")
+            print("\n✓ All privileges have been granted to the 'sheppard' user for all databases, tables, indexes, and future objects.")
+        else:
+            print("\n⚠️ Setup completed with some warnings. Please check the logs above.")
+    except Exception as e:
+        print(f"\n✗ Error during setup: {str(e)}")
+        cleanup_temp_files()  # Ensure cleanup even on error
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
