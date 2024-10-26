@@ -47,6 +47,53 @@ def cleanup_redis():
         if os.path.exists(data_dir):
             run_command(f"sudo rm -rf {data_dir}")
 
+    # Reload systemd to recoimport subprocess
+import sys
+import os
+import shutil
+import time
+
+def run_command(command):
+    process = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    output, error = process.communicate()
+    if process.returncode != 0:
+        print(f"Error executing command: {command}")
+        print(error.decode())
+        return False
+    return output.decode().strip()
+
+def install_packages():
+    print("Installing necessary packages...")
+    run_command("sudo apt update")
+    run_command("sudo apt install -y redis-server postgresql")
+
+def cleanup_redis():
+    print("Cleaning up existing Redis instances...")
+    redis_dbs = ['ephemeral', 'contextual', 'episodic', 'semantic', 'abstracted']
+    
+    # Stop all Redis services and remove service files
+    for i, db_name in enumerate(redis_dbs):
+        port = 6370 + i
+        service_name = f"redis-{port}.service"
+        
+        # Stop and disable the service if it exists
+        run_command(f"sudo systemctl stop {service_name}")
+        run_command(f"sudo systemctl disable {service_name}")
+        
+        # Remove service file
+        if os.path.exists(f"/etc/systemd/system/{service_name}"):
+            run_command(f"sudo rm /etc/systemd/system/{service_name}")
+
+        # Remove config file
+        config_file = f"/etc/redis/redis-{port}.conf"
+        if os.path.exists(config_file):
+            run_command(f"sudo rm {config_file}")
+
+        # Clean up data directory
+        data_dir = f"/var/lib/redis/{port}"
+        if os.path.exists(data_dir):
+            run_command(f"sudo rm -rf {data_dir}")
+
     # Reload systemd to recognize removed services
     run_command("sudo systemctl daemon-reload")
 
@@ -202,7 +249,7 @@ def setup_postgresql():
 
     # Create user with superuser privileges and password
     if not user_exists("sheppard"):
-        run_command("sudo -u postgres -i psql -c \"CREATE USER sheppard WITH SUPERUSER PASSWORD 'llama';\"")
+        run_command("sudo -u postgres -i psql -c \"CREATE USER sheppard WITH SUPERUSER PASSWORD '1234';\"")
     else:
         print("User 'sheppard' already exists, skipping creation...")
 
@@ -220,9 +267,8 @@ def setup_postgresql():
 def create_tables():
     print("Creating PostgreSQL tables...")
 
-    # Create tables in episodic_memory database
-    run_command("""
-    sudo -u postgres -i psql -d episodic_memory -c "
+    # Template for create table command - used for all databases
+    table_template = """
         CREATE TABLE IF NOT EXISTS agent_interactions (
             id SERIAL PRIMARY KEY,
             timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
@@ -230,55 +276,32 @@ def create_tables():
             input TEXT NOT NULL,
             response TEXT NOT NULL,
             entities JSONB,
-            topics JSONB
+            topics JSONB,
+            embedding FLOAT[],
+            metadata JSONB DEFAULT '{}'::jsonb,
+            context_metadata JSONB DEFAULT '{}'::jsonb,
+            state TEXT DEFAULT 'default',
+            memory_hash TEXT NOT NULL,
+            importance_score FLOAT DEFAULT 0.0,
+            last_accessed TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+            access_count INTEGER DEFAULT 0,
+            CONSTRAINT memory_hash_unique UNIQUE(memory_hash)
         );
         CREATE INDEX IF NOT EXISTS idx_agent_interactions_agent_id ON agent_interactions (agent_id);
         CREATE INDEX IF NOT EXISTS idx_agent_interactions_timestamp ON agent_interactions (timestamp);
-    "
-    """)
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_state ON agent_interactions (state);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_importance ON agent_interactions (importance_score);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_memory_hash ON agent_interactions (memory_hash);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_last_accessed ON agent_interactions (last_accessed);
+        CREATE INDEX IF NOT EXISTS idx_agent_interactions_context_metadata ON agent_interactions USING gin(context_metadata);
+    """
 
-    # Create tables in semantic_memory database
-    run_command("""
-    sudo -u postgres -i psql -d semantic_memory -c "
-        CREATE TABLE IF NOT EXISTS entity_relationships (
-            id SERIAL PRIMARY KEY,
-            entity TEXT NOT NULL,
-            related_entities JSONB,
-            context TEXT,
-            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE INDEX IF NOT EXISTS idx_entity_relationships_entity ON entity_relationships (entity);
-    "
-    """)
-
-    # Create tables in contextual_memory database
-    run_command("""
-    sudo -u postgres -i psql -d contextual_memory -c "
-        CREATE TABLE IF NOT EXISTS recent_contexts (
-            id SERIAL PRIMARY KEY,
-            agent_id TEXT NOT NULL,
-            context_data JSONB,
-            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE INDEX IF NOT EXISTS idx_recent_contexts_agent_id ON recent_contexts (agent_id);
-        CREATE INDEX IF NOT EXISTS idx_recent_contexts_timestamp ON recent_contexts (timestamp);
-    "
-    """)
-
-    # Create tables in abstracted_memory database
-    run_command("""
-    sudo -u postgres -i psql -d abstracted_memory -c "
-        CREATE TABLE IF NOT EXISTS abstracted_memories (
-            id SERIAL PRIMARY KEY,
-            agent_id TEXT NOT NULL,
-            abstraction_type TEXT NOT NULL,
-            content JSONB,
-            timestamp TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
-        );
-        CREATE INDEX IF NOT EXISTS idx_abstracted_memories_agent_id ON abstracted_memories (agent_id);
-        CREATE INDEX IF NOT EXISTS idx_abstracted_memories_abstraction_type ON abstracted_memories (abstraction_type);
-    "
-    """)
+    # Create tables in all databases
+    databases = ["episodic_memory", "semantic_memory", "contextual_memory", "general_memory", "abstracted_memory"]
+    for db in databases:
+        run_command(f"""
+        sudo -u postgres -i psql -d {db} -c "{table_template}"
+        """)
 
     print("All tables created successfully.")
 
