@@ -1,3 +1,4 @@
+# server_wipe.py
 import subprocess
 import sys
 import os
@@ -54,7 +55,8 @@ def cleanup_chromadb():
     chroma_paths = [
         os.path.expanduser("~/.cache/chroma"),
         "/path/to/persist",  # Default path from your setup
-        "chroma.sqlite3"
+        "chroma.sqlite3",
+        "data/chroma_persistence"  # Added this path
     ]
     
     for path in chroma_paths:
@@ -66,24 +68,24 @@ def cleanup_chromadb():
                 shutil.rmtree(path)
     print("✓ ChromaDB cleanup completed")
 
+    # Also remove any leftover index files
+    print("  ◦ Cleaning up any remaining ChromaDB files...")
+    run_command("find . -name '*.bin' -type f -delete")
+    run_command("find . -name '*.pkl' -type f -delete")
+    run_command("find . -name 'chroma-*' -type d -exec rm -rf {} +")
+
 def database_exists(db_name):
     result = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_database WHERE datname='{db_name.lower()}'\"")
-    return result == "1"
-
-def user_exists(user_name):
-    result = run_command(f"sudo -u postgres -i psql -tAc \"SELECT 1 FROM pg_roles WHERE rolname='{user_name}';\"")
     return result == "1"
 
 def cleanup_postgresql():
     print("\n🧹 Cleaning up PostgreSQL...")
     databases = ["episodic_memory", "semantic_memory", "contextual_memory", "general_memory", "abstracted_memory"]
     
-    # First revoke all privileges
+    # Drop databases but preserve user and permissions
     for db in databases:
         if database_exists(db):
             print(f"\nCleaning database: {db}")
-            print(f"  ◦ Revoking privileges on {db}...")
-            run_command(f"sudo -u postgres -i psql -c 'REVOKE ALL PRIVILEGES ON DATABASE {db} FROM sheppard;'")
             
             # Forcefully disconnect all users
             run_command(f"""sudo -u postgres -i psql -c "
@@ -95,11 +97,6 @@ def cleanup_postgresql():
             # Drop the database
             print(f"  ◦ Dropping database {db}...")
             run_command(f"sudo -u postgres -i psql -c 'DROP DATABASE IF EXISTS {db};'")
-
-    # Drop the user
-    if user_exists("sheppard"):
-        print("  ◦ Dropping user 'sheppard'...")
-        run_command("sudo -u postgres -i psql -c 'DROP USER IF EXISTS sheppard;'")
     
     print("✓ PostgreSQL cleanup completed")
 
@@ -120,7 +117,7 @@ def main():
         print("\nThe following has been cleaned:")
         print("  • Redis instances (ports 6370-6374)")
         print("  • ChromaDB data and cache")
-        print("  • PostgreSQL databases and user")
+        print("  • PostgreSQL databases (preserving user and permissions)")
         print("\n⚠️  Note: You may need to run the setup script again to recreate the databases.")
         
     except Exception as e:
