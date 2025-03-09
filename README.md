@@ -3,6 +3,7 @@ First and foremost, a special thanks to:
 Dallan Loomis: without your interactions and heads up, I would still somewhat be lost and trying to figure things out more some. 
 
 My parents: without your support, I would be dead in the water.
+
 and My son: without you, I would be dead period. 
 
 
