@@ -30,7 +30,7 @@ Overall System Performance (82.0/100):
   - Focus on fine-tuning specific capabilities for optimal performance.
 **THESE RESULTS ONLY REFLECT THE RESEARCH FUNCTION OF THE APPLICATION
 
-*On an i9-12900k 32gb 6000mhz DDR5, a4000 16gb GPU, running PopOS on 4tb gen 4! silicone power m2.
+*On an i9-12900k 32gb 6000mhz DDR5, a4000 16gb GPU, running PopOS! on 4tb gen 4 silicone power m2.
 ______________________________________________________________
 
 Hi guys, 
