@@ -1,0 +1,1269 @@
+2025-03-06 14:58:07,847 - src.config.logging - INFO - Logging initialized:
+2025-03-06 14:58:07,848 - src.config.logging - INFO - Default level: INFO
+2025-03-06 14:58:07,849 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 14:58:07,850 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 14:58:07,916 - src.memory.stores.redis - INFO - Loaded 249 memories from Redis
+2025-03-06 14:58:07,916 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 14:58:08,331 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 14:58:08,332 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 14:58:08,337 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 14:58:08,856 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 14:58:09,163 - src.research.browser_manager - ERROR - Failed to initialize browser manager: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+2025-03-06 14:58:09,166 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 14:58:09,167 - src.research.exceptions - ERROR - Research error occurred: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+2025-03-06 14:58:09,169 - src.research.system - ERROR - Failed to initialize research system: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+2025-03-06 14:58:09,172 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 14:58:09,173 - src.research.system - ERROR - Error during cleanup: 'ResearchTaskManager' object has no attribute 'cleanup'
+2025-03-06 14:58:09,174 - __main__ - ERROR - Component initialization failed: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 215, in initialize
+    self.driver = uc.Chrome(options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 114, in initialize
+    await self.browser.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 237, in initialize
+    raise BrowserError(f"Browser initialization failed: {str(e)}")
+src.research.exceptions.BrowserError: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:54709
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x564b46b2a46a <unknown>
+#1 0x564b465e3ed0 <unknown>
+#2 0x564b4662461d <unknown>
+#3 0x564b466234f5 <unknown>
+#4 0x564b46618df3 <unknown>
+#5 0x564b4666a1cf <unknown>
+#6 0x564b46669706 <unknown>
+#7 0x564b4665b633 <unknown>
+#8 0x564b466271be <unknown>
+#9 0x564b46628981 <unknown>
+#10 0x564b46af086b <unknown>
+#11 0x564b46af473c <unknown>
+#12 0x564b46ad7f12 <unknown>
+#13 0x564b46af52b4 <unknown>
+#14 0x564b46abc0af <unknown>
+#15 0x564b46b18ad8 <unknown>
+#16 0x564b46b18cb6 <unknown>
+#17 0x564b46b292e6 <unknown>
+#18 0x7762e9c94ac3 <unknown>
+
+
+2025-03-06 14:58:09,194 - uc - INFO - ensuring close
+2025-03-06 15:03:46,760 - src.config.logging - INFO - Logging initialized:
+2025-03-06 15:03:46,761 - src.config.logging - INFO - Default level: INFO
+2025-03-06 15:03:46,762 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 15:03:46,763 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 15:03:46,830 - src.memory.stores.redis - INFO - Loaded 249 memories from Redis
+2025-03-06 15:03:46,831 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 15:03:46,909 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 15:03:46,909 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 15:03:46,914 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 15:03:47,438 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 15:03:47,631 - uc - INFO - setting properties for headless
+2025-03-06 15:03:47,681 - src.research.browser_manager - INFO - Browser manager initialized successfully
+2025-03-06 15:03:47,687 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 15:03:47,688 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 15:03:47,689 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 15:03:47,690 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 15:03:47,691 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 15:03:53,068 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 15:03:53,072 - uc - INFO - ensuring close
+2025-03-06 15:03:56,741 - src.config.logging - INFO - Logging initialized:
+2025-03-06 15:03:56,742 - src.config.logging - INFO - Default level: INFO
+2025-03-06 15:03:56,742 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 15:03:56,744 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 15:03:56,808 - src.memory.stores.redis - INFO - Loaded 249 memories from Redis
+2025-03-06 15:03:56,809 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 15:03:56,886 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 15:03:56,887 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 15:03:56,892 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 15:03:57,399 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 15:03:57,586 - uc - INFO - setting properties for headless
+2025-03-06 15:03:57,635 - src.research.browser_manager - INFO - Browser manager initialized successfully
+2025-03-06 15:03:57,641 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 15:03:57,641 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 15:03:57,642 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 15:03:57,643 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 15:03:57,643 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 15:06:06,317 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 15:06:06,322 - uc - INFO - ensuring close
+2025-03-06 15:06:08,768 - src.config.logging - INFO - Logging initialized:
+2025-03-06 15:06:08,768 - src.config.logging - INFO - Default level: INFO
+2025-03-06 15:06:08,769 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 15:06:08,771 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 15:06:08,837 - src.memory.stores.redis - INFO - Loaded 249 memories from Redis
+2025-03-06 15:06:08,837 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 15:06:08,914 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 15:06:08,915 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 15:06:08,920 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 15:06:09,468 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 15:06:09,668 - uc - INFO - setting properties for headless
+2025-03-06 15:06:09,716 - src.research.browser_manager - INFO - Browser manager initialized successfully
+2025-03-06 15:06:09,721 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 15:06:09,722 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 15:06:09,723 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 15:06:09,723 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 15:06:09,724 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 15:06:21,108 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 15:06:21,113 - uc - INFO - ensuring close
+2025-03-06 16:18:33,794 - src.config.logging - INFO - Logging initialized:
+2025-03-06 16:18:33,795 - src.config.logging - INFO - Default level: INFO
+2025-03-06 16:18:33,795 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 16:18:33,797 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 16:18:33,876 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 16:18:33,877 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 16:18:33,975 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 16:18:33,976 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 16:18:33,982 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 16:18:34,522 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 16:18:36,203 - src.research.browser_manager - ERROR - Failed to initialize browser manager: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+2025-03-06 16:18:36,206 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:18:36,206 - src.research.exceptions - ERROR - Research error occurred: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+2025-03-06 16:18:36,209 - src.research.system - ERROR - Failed to initialize research system: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+2025-03-06 16:18:36,212 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:18:36,213 - src.research.system - ERROR - Error during cleanup: 'ResearchTaskManager' object has no attribute 'cleanup'
+2025-03-06 16:18:36,216 - __main__ - ERROR - Component initialization failed: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 215, in initialize
+    self.driver = uc.Chrome(options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 114, in initialize
+    await self.browser.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 237, in initialize
+    raise BrowserError(f"Browser initialization failed: {str(e)}")
+src.research.exceptions.BrowserError: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:49601
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x59e1413e946a <unknown>
+#1 0x59e140ea2ed0 <unknown>
+#2 0x59e140ee361d <unknown>
+#3 0x59e140ee24f5 <unknown>
+#4 0x59e140ed7df3 <unknown>
+#5 0x59e140f291cf <unknown>
+#6 0x59e140f28706 <unknown>
+#7 0x59e140f1a633 <unknown>
+#8 0x59e140ee61be <unknown>
+#9 0x59e140ee7981 <unknown>
+#10 0x59e1413af86b <unknown>
+#11 0x59e1413b373c <unknown>
+#12 0x59e141396f12 <unknown>
+#13 0x59e1413b42b4 <unknown>
+#14 0x59e14137b0af <unknown>
+#15 0x59e1413d7ad8 <unknown>
+#16 0x59e1413d7cb6 <unknown>
+#17 0x59e1413e82e6 <unknown>
+#18 0x7bfa27094ac3 <unknown>
+
+
+2025-03-06 16:18:36,240 - uc - INFO - ensuring close
+2025-03-06 16:19:38,344 - src.config.logging - INFO - Logging initialized:
+2025-03-06 16:19:38,344 - src.config.logging - INFO - Default level: INFO
+2025-03-06 16:19:38,345 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 16:19:38,346 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 16:19:38,422 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 16:19:38,423 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 16:19:38,501 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 16:19:38,502 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 16:19:38,507 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 16:19:39,011 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 16:19:39,278 - src.research.browser_manager - ERROR - Failed to initialize browser manager: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+2025-03-06 16:19:39,282 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:19:39,283 - src.research.exceptions - ERROR - Research error occurred: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+2025-03-06 16:19:39,286 - src.research.system - ERROR - Failed to initialize research system: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+2025-03-06 16:19:39,288 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:19:39,289 - src.research.system - ERROR - Error during cleanup: 'ResearchTaskManager' object has no attribute 'cleanup'
+2025-03-06 16:19:39,290 - __main__ - ERROR - Component initialization failed: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 215, in initialize
+    self.driver = uc.Chrome(options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 114, in initialize
+    await self.browser.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 237, in initialize
+    raise BrowserError(f"Browser initialization failed: {str(e)}")
+src.research.exceptions.BrowserError: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:52519
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x588d60ec846a <unknown>
+#1 0x588d60981ed0 <unknown>
+#2 0x588d609c261d <unknown>
+#3 0x588d609c14f5 <unknown>
+#4 0x588d609b6df3 <unknown>
+#5 0x588d60a081cf <unknown>
+#6 0x588d60a07706 <unknown>
+#7 0x588d609f9633 <unknown>
+#8 0x588d609c51be <unknown>
+#9 0x588d609c6981 <unknown>
+#10 0x588d60e8e86b <unknown>
+#11 0x588d60e9273c <unknown>
+#12 0x588d60e75f12 <unknown>
+#13 0x588d60e932b4 <unknown>
+#14 0x588d60e5a0af <unknown>
+#15 0x588d60eb6ad8 <unknown>
+#16 0x588d60eb6cb6 <unknown>
+#17 0x588d60ec72e6 <unknown>
+#18 0x7f788c094ac3 <unknown>
+
+
+2025-03-06 16:19:39,312 - uc - INFO - ensuring close
+2025-03-06 16:33:25,365 - src.config.logging - INFO - Logging initialized:
+2025-03-06 16:33:25,366 - src.config.logging - INFO - Default level: INFO
+2025-03-06 16:33:25,367 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 16:33:25,368 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 16:33:25,444 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 16:33:25,445 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 16:33:25,524 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 16:33:25,525 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 16:33:25,531 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 16:33:26,106 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 16:33:26,386 - src.research.browser_manager - ERROR - Failed to initialize browser manager: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+2025-03-06 16:33:26,389 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:33:26,390 - src.research.exceptions - ERROR - Research error occurred: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+2025-03-06 16:33:26,394 - src.research.system - ERROR - Failed to initialize research system: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+2025-03-06 16:33:26,396 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 16:33:26,397 - src.research.system - ERROR - Error during cleanup: 'ResearchTaskManager' object has no attribute 'cleanup'
+2025-03-06 16:33:26,398 - __main__ - ERROR - Component initialization failed: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 216, in initialize
+    self.driver = uc.Chrome(options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 114, in initialize
+    await self.browser.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 235, in initialize
+    raise BrowserError(f"Browser initialization failed: {str(e)}")
+src.research.exceptions.BrowserError: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:53751
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f11efada46a <unknown>
+#1 0x5f11ef593ed0 <unknown>
+#2 0x5f11ef5d461d <unknown>
+#3 0x5f11ef5d34f5 <unknown>
+#4 0x5f11ef5c8df3 <unknown>
+#5 0x5f11ef61a1cf <unknown>
+#6 0x5f11ef619706 <unknown>
+#7 0x5f11ef60b633 <unknown>
+#8 0x5f11ef5d71be <unknown>
+#9 0x5f11ef5d8981 <unknown>
+#10 0x5f11efaa086b <unknown>
+#11 0x5f11efaa473c <unknown>
+#12 0x5f11efa87f12 <unknown>
+#13 0x5f11efaa52b4 <unknown>
+#14 0x5f11efa6c0af <unknown>
+#15 0x5f11efac8ad8 <unknown>
+#16 0x5f11efac8cb6 <unknown>
+#17 0x5f11efad92e6 <unknown>
+#18 0x76b5f1294ac3 <unknown>
+
+
+2025-03-06 16:33:26,419 - uc - INFO - ensuring close
+2025-03-06 16:42:49,554 - src.config.logging - INFO - Logging initialized:
+2025-03-06 16:42:49,555 - src.config.logging - INFO - Default level: INFO
+2025-03-06 16:42:49,556 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 16:42:49,557 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 16:42:49,633 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 16:42:49,634 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 16:42:49,713 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 16:42:49,714 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 16:42:49,719 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 16:42:49,720 - src.research.system - ERROR - Failed to initialize research system: unterminated string literal (detected at line 53) (browser_manager.py, line 53)
+2025-03-06 16:42:49,721 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 16:42:49,722 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 16:42:49,722 - __main__ - ERROR - Component initialization failed: unterminated string literal (detected at line 53) (browser_manager.py, line 53)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 53
+    r'\.(exe|zip|rar|7z|tar|gz)
+    ^
+SyntaxError: unterminated string literal (detected at line 53)
+
+2025-03-06 17:07:16,115 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:07:16,116 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:07:16,117 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:07:16,118 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:07:16,201 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:07:16,202 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:07:16,283 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:07:16,284 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:07:16,289 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:07:16,292 - src.research.system - ERROR - Failed to initialize research system: unindent does not match any outer indentation level (browser_manager.py, line 815)
+2025-03-06 17:07:16,293 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 17:07:16,293 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 17:07:16,294 - __main__ - ERROR - Component initialization failed: unindent does not match any outer indentation level (browser_manager.py, line 815)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 815
+    for link_elem in link_elems[:self.max_pages]:
+                                                 ^
+IndentationError: unindent does not match any outer indentation level
+
+2025-03-06 17:07:54,948 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:07:54,949 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:07:54,949 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:07:54,951 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:07:55,026 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:07:55,028 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:07:55,105 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:07:55,106 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:07:55,111 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:07:55,114 - src.research.system - ERROR - Failed to initialize research system: unindent does not match any outer indentation level (browser_manager.py, line 815)
+2025-03-06 17:07:55,115 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 17:07:55,116 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 17:07:55,116 - __main__ - ERROR - Component initialization failed: unindent does not match any outer indentation level (browser_manager.py, line 815)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 815
+    for link_elem in link_elems[:self.max_pages]:
+                                                 ^
+IndentationError: unindent does not match any outer indentation level
+
+2025-03-06 17:12:24,923 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:12:24,924 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:12:24,924 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:12:24,926 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:12:25,000 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:12:25,002 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:12:25,081 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:12:25,081 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:12:25,087 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:12:25,091 - src.research.system - ERROR - Failed to initialize research system: invalid syntax (browser_manager.py, line 799)
+2025-03-06 17:12:25,092 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 17:12:25,092 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 17:12:25,093 - __main__ - ERROR - Component initialization failed: invalid syntax (browser_manager.py, line 799)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 799
+    snippet = await snippet_elem.inner_text() if snippet_elem else ""if url and url not in self.visited_urls:
+                                                                                                            ^
+SyntaxError: invalid syntax
+
+2025-03-06 17:17:00,026 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:17:00,027 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:17:00,028 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:17:00,029 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:17:00,104 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:17:00,104 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:17:00,183 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:17:00,184 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:17:00,189 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:17:00,193 - src.research.system - ERROR - Failed to initialize research system: unexpected indent (browser_manager.py, line 806)
+2025-03-06 17:17:00,193 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 17:17:00,194 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 17:17:00,195 - __main__ - ERROR - Component initialization failed: unexpected indent (browser_manager.py, line 806)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 806
+    self.visited_urls.add(url)
+IndentationError: unexpected indent
+
+2025-03-06 17:17:19,095 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:17:19,095 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:17:19,096 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:17:19,098 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:17:19,175 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:17:19,176 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:17:19,256 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:17:19,257 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:17:19,262 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:17:19,266 - src.research.system - ERROR - Failed to initialize research system: unexpected indent (browser_manager.py, line 806)
+2025-03-06 17:17:19,267 - src.research.base_system - INFO - Base system cleanup completed
+2025-03-06 17:17:19,268 - src.research.system - INFO - Research system cleanup completed
+2025-03-06 17:17:19,269 - __main__ - ERROR - Component initialization failed: unexpected indent (browser_manager.py, line 806)
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 93, in initialize
+    from src.research.browser_manager import BrowserManager
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 806
+    self.visited_urls.add(url)
+IndentationError: unexpected indent
+
+2025-03-06 17:18:45,688 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:18:45,688 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:18:45,689 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:18:45,690 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:18:45,768 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:18:45,769 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:18:45,850 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:18:45,851 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:18:45,856 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:18:45,878 - src.research.browser_manager - INFO - Initializing browser (attempt 1)
+2025-03-06 17:18:46,431 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 17:18:46,717 - src.research.browser_manager - WARNING - Method _initialize_with_undetected_chromedriver failed: Message: session not created: cannot connect to chrome at 127.0.0.1:48247
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5acc4747946a <unknown>
+#1 0x5acc46f32ed0 <unknown>
+#2 0x5acc46f7361d <unknown>
+#3 0x5acc46f724f5 <unknown>
+#4 0x5acc46f67df3 <unknown>
+#5 0x5acc46fb91cf <unknown>
+#6 0x5acc46fb8706 <unknown>
+#7 0x5acc46faa633 <unknown>
+#8 0x5acc46f761be <unknown>
+#9 0x5acc46f77981 <unknown>
+#10 0x5acc4743f86b <unknown>
+#11 0x5acc4744373c <unknown>
+#12 0x5acc47426f12 <unknown>
+#13 0x5acc474442b4 <unknown>
+#14 0x5acc4740b0af <unknown>
+#15 0x5acc47467ad8 <unknown>
+#16 0x5acc47467cb6 <unknown>
+#17 0x5acc474782e6 <unknown>
+#18 0x7e5498694ac3 <unknown>
+
+2025-03-06 17:18:46,749 - src.research.browser_manager - WARNING - Method _initialize_with_webdriver_manager failed: ChromeDriverManager.__init__() got an unexpected keyword argument 'chrome_version'
+2025-03-06 17:18:46,751 - src.research.browser_manager - INFO - Found system ChromeDriver at: /usr/bin/chromedriver
+2025-03-06 17:19:46,979 - src.research.browser_manager - INFO - Using requests/BeautifulSoup as a minimal fallback
+2025-03-06 17:19:46,981 - src.research.browser_manager - INFO - Browser manager initialized successfully using _initialize_with_fallback_methods
+2025-03-06 17:19:46,982 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 17:19:46,983 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 17:19:46,984 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 17:19:46,985 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 17:19:46,986 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 17:20:20,796 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 17:20:20,805 - uc - INFO - ensuring close
+2025-03-06 17:20:54,999 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:20:55,000 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:20:55,000 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:20:55,002 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:20:55,077 - src.memory.stores.redis - INFO - Loaded 282 memories from Redis
+2025-03-06 17:20:55,078 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:20:55,157 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:20:55,158 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:20:55,163 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:20:55,181 - src.research.browser_manager - INFO - Initializing browser (attempt 1)
+2025-03-06 17:20:55,715 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 17:20:56,032 - src.research.browser_manager - WARNING - Method _initialize_with_undetected_chromedriver failed: Message: session not created: cannot connect to chrome at 127.0.0.1:44185
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5bce2956246a <unknown>
+#1 0x5bce2901bed0 <unknown>
+#2 0x5bce2905c61d <unknown>
+#3 0x5bce2905b4f5 <unknown>
+#4 0x5bce29050df3 <unknown>
+#5 0x5bce290a21cf <unknown>
+#6 0x5bce290a1706 <unknown>
+#7 0x5bce29093633 <unknown>
+#8 0x5bce2905f1be <unknown>
+#9 0x5bce29060981 <unknown>
+#10 0x5bce2952886b <unknown>
+#11 0x5bce2952c73c <unknown>
+#12 0x5bce2950ff12 <unknown>
+#13 0x5bce2952d2b4 <unknown>
+#14 0x5bce294f40af <unknown>
+#15 0x5bce29550ad8 <unknown>
+#16 0x5bce29550cb6 <unknown>
+#17 0x5bce295612e6 <unknown>
+#18 0x7f4388894ac3 <unknown>
+
+2025-03-06 17:20:56,066 - src.research.browser_manager - WARNING - Method _initialize_with_webdriver_manager failed: ChromeDriverManager.__init__() got an unexpected keyword argument 'chrome_version'
+2025-03-06 17:20:56,069 - src.research.browser_manager - INFO - Found system ChromeDriver at: /usr/bin/chromedriver
+2025-03-06 17:21:56,286 - src.research.browser_manager - INFO - Using requests/BeautifulSoup as a minimal fallback
+2025-03-06 17:21:56,287 - src.research.browser_manager - INFO - Browser manager initialized successfully using _initialize_with_fallback_methods
+2025-03-06 17:21:56,288 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 17:21:56,289 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 17:21:56,290 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 17:21:56,291 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 17:21:56,292 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 17:22:13,897 - src.research.system - INFO - Searching on Bing...
+2025-03-06 17:22:14,735 - src.research.system - INFO - Found results from bing
+2025-03-06 17:22:14,737 - src.research.system - INFO - Attempting to scrape https://www.datacamp.com/blog/python-best-practices-for-better-code with Firecrawl
+2025-03-06 17:22:18,477 - src.research.system - INFO - Successfully scraped https://www.datacamp.com/blog/python-best-practices-for-better-code with Firecrawl
+2025-03-06 17:22:18,480 - src.research.system - ERROR - Extraction error: local variable 'json' referenced before assignment
+2025-03-06 17:22:18,484 - src.research.system - INFO - Attempting to scrape https://www.appacademy.io/blog/python-coding-best-practices with Firecrawl
+2025-03-06 17:22:23,023 - src.research.system - INFO - Successfully scraped https://www.appacademy.io/blog/python-coding-best-practices with Firecrawl
+2025-03-06 17:22:23,025 - src.research.system - ERROR - Extraction error: local variable 'json' referenced before assignment
+2025-03-06 17:22:23,028 - src.research.system - INFO - Attempting to scrape https://docs.python-guide.org/writing/structure/ with Firecrawl
+2025-03-06 17:22:26,833 - src.research.system - INFO - Successfully scraped https://docs.python-guide.org/writing/structure/ with Firecrawl
+2025-03-06 17:22:26,837 - src.research.system - ERROR - Extraction error: local variable 'json' referenced before assignment
+2025-03-06 17:22:26,842 - src.research.system - INFO - Attempting to scrape https://realpython.com/tutorials/best-practices/ with Firecrawl
+2025-03-06 17:22:30,059 - src.research.system - INFO - Successfully scraped https://realpython.com/tutorials/best-practices/ with Firecrawl
+2025-03-06 17:22:30,062 - src.research.system - ERROR - Extraction error: local variable 'json' referenced before assignment
+2025-03-06 17:22:30,067 - src.research.system - INFO - Attempting to scrape https://learnpython.com/blog/python-coding-best-practices-and-style-guidelines/ with Firecrawl
+2025-03-06 17:22:33,457 - src.research.system - INFO - Successfully scraped https://learnpython.com/blog/python-coding-best-practices-and-style-guidelines/ with Firecrawl
+2025-03-06 17:22:33,461 - src.research.system - ERROR - Extraction error: local variable 'json' referenced before assignment
+2025-03-06 17:22:34,550 - src.research.system - INFO - Successfully generated embedding for research results
+2025-03-06 17:22:34,580 - src.research.system - INFO - Stored research results in memory
+2025-03-06 17:25:49,444 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 17:25:49,449 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x777f1b44e2f0>
+2025-03-06 17:25:49,451 - asyncio - ERROR - Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x777f1b334400>, 196791.455512024)])']
+connector: <aiohttp.connector.TCPConnector object at 0x777f19140f40>
+2025-03-06 17:25:49,454 - uc - INFO - ensuring close
+2025-03-06 17:25:52,487 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:25:52,488 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:25:52,488 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:25:52,490 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:25:52,566 - src.memory.stores.redis - INFO - Loaded 283 memories from Redis
+2025-03-06 17:25:52,567 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:25:52,645 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:25:52,646 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:25:52,651 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:25:53,156 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 17:25:53,448 - src.research.browser_manager - ERROR - Failed to initialize browser manager: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+2025-03-06 17:25:53,451 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 17:25:53,452 - src.research.exceptions - ERROR - Research error occurred: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+2025-03-06 17:25:53,455 - src.research.system - ERROR - Failed to initialize research system: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+2025-03-06 17:25:53,457 - src.research.browser_manager - INFO - Browser manager cleanup completed successfully
+2025-03-06 17:25:53,458 - src.research.system - ERROR - Error during cleanup: 'ResearchTaskManager' object has no attribute 'cleanup'
+2025-03-06 17:25:53,460 - __main__ - ERROR - Component initialization failed: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 215, in initialize
+    self.driver = uc.Chrome(options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 466, in __init__
+    super(Chrome, self).__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 250, in __init__
+    self.start_session(capabilities)
+  File "/home/joker2/.local/lib/python3.10/site-packages/undetected_chromedriver/__init__.py", line 724, in start_session
+    super(selenium.webdriver.chrome.webdriver.WebDriver, self).start_session(
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 342, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "/home/joker2/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker2/Documents/sheppard/main.py", line 297, in initialize_components
+    await research_system.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/system.py", line 114, in initialize
+    await self.browser.initialize()
+  File "/home/joker2/Documents/sheppard/src/research/browser_manager.py", line 237, in initialize
+    raise BrowserError(f"Browser initialization failed: {str(e)}")
+src.research.exceptions.BrowserError: [BROWSER_ERROR] Research Error: Browser initialization failed: Message: session not created: cannot connect to chrome at 127.0.0.1:45321
+from session not created: This version of ChromeDriver only supports Chrome version 134
+Current browser version is 133.0.6943.141
+Stacktrace:
+#0 0x5f7b10ed546a <unknown>
+#1 0x5f7b1098eed0 <unknown>
+#2 0x5f7b109cf61d <unknown>
+#3 0x5f7b109ce4f5 <unknown>
+#4 0x5f7b109c3df3 <unknown>
+#5 0x5f7b10a151cf <unknown>
+#6 0x5f7b10a14706 <unknown>
+#7 0x5f7b10a06633 <unknown>
+#8 0x5f7b109d21be <unknown>
+#9 0x5f7b109d3981 <unknown>
+#10 0x5f7b10e9b86b <unknown>
+#11 0x5f7b10e9f73c <unknown>
+#12 0x5f7b10e82f12 <unknown>
+#13 0x5f7b10ea02b4 <unknown>
+#14 0x5f7b10e670af <unknown>
+#15 0x5f7b10ec3ad8 <unknown>
+#16 0x5f7b10ec3cb6 <unknown>
+#17 0x5f7b10ed42e6 <unknown>
+#18 0x7e6af8a94ac3 <unknown>
+
+
+2025-03-06 17:25:53,480 - uc - INFO - ensuring close
+2025-03-06 17:27:20,936 - src.config.logging - INFO - Logging initialized:
+2025-03-06 17:27:20,936 - src.config.logging - INFO - Default level: INFO
+2025-03-06 17:27:20,937 - src.config.logging - INFO - Log file: /home/joker2/Documents/sheppard/logs/chat_20250306.log
+2025-03-06 17:27:20,938 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-06 17:27:21,015 - src.memory.stores.redis - INFO - Loaded 283 memories from Redis
+2025-03-06 17:27:21,016 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-06 17:27:21,096 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-06 17:27:21,097 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-06 17:27:21,102 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-06 17:27:21,123 - src.research.browser_manager - INFO - Initializing browser (attempt 1)
+2025-03-06 17:27:21,606 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-06 17:27:21,801 - uc - INFO - setting properties for headless
+2025-03-06 17:27:21,850 - src.research.browser_manager - INFO - Browser manager initialized successfully using _initialize_with_undetected_chromedriver
+2025-03-06 17:27:21,856 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-06 17:27:21,857 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-06 17:27:21,857 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-06 17:27:21,858 - src.research.system - INFO - Research system initialized successfully
+2025-03-06 17:27:21,859 - src.core.chat - INFO - ChatApp initialized successfully
+2025-03-06 18:01:38,136 - __main__ - INFO - Received keyboard interrupt
+2025-03-06 18:01:38,140 - uc - INFO - ensuring close

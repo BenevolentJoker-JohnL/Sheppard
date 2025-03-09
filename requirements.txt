@@ -1,0 +1,39 @@
+# Core dependencies
+aiohttp>=3.9.1           # For async HTTP requests
+python-dotenv>=1.0.0     # Environment variable management
+pydantic>=2.5.2         # Data validation and settings management
+
+# Rich CLI interface
+rich>=13.7.0            # Rich text and formatting in terminal
+
+# Memory storage
+redis>=5.0.1            # Redis client
+aioredis>=2.0.1         # Async Redis client
+chromadb>=0.4.18        # Vector database for embeddings
+
+# Testing and development
+pytest>=7.4.3           # Testing framework
+pytest-asyncio>=0.23.2  # Async support for pytest
+pytest-cov>=4.1.0       # Test coverage reporting
+
+# Type checking and development tools
+mypy>=1.7.1            # Static type checking
+types-redis>=4.6.0.11  # Type stubs for Redis
+types-aiofiles>=23.2.0 # Type stubs for aiofiles
+
+# Documentation
+sphinx>=7.2.6          # Documentation generator
+sphinx-rtd-theme>=2.0.0 # Read the Docs theme for Sphinx
+
+# Browser and web scraping
+selenium>=4.15.2        # Browser automation
+beautifulsoup4>=4.12.2  # HTML parsing
+webdriver-manager>=4.0.1 # Webdriver management
+tldextract>=5.1.1       # Top-level domain extraction
+
+# Request handling
+requests>=2.31.0        # HTTP requests library
+
+undetected-chromedriver>=3.5.4
+fake-useragent>=1.2.1
+firecrawl-py>=0.2.0

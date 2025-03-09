@@ -1,0 +1,365 @@
+2024-10-31 07:05:19 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:05:20 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:05:20 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:05:20 [INFO] __main__ - Starting initialization...
+2024-10-31 07:05:20 [INFO] src.config.config - All required directories validated
+2024-10-31 07:05:20 [ERROR] src.core.sheppard.core - Error initializing clients: type object 'DatabaseConfig' has no attribute 'MODEL_CONFIG'
+2024-10-31 07:05:20 [ERROR] __main__ - Error during initialization: type object 'DatabaseConfig' has no attribute 'MODEL_CONFIG'
+2024-10-31 07:05:20 [ERROR] __main__ - Fatal error in main loop
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 91, in run
+    logger.error("Initialization failed")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 135, in run
+    logger.error(f"Fatal error in main loop: {str(e)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 146, in cleanup
+    logger.info("Starting application cleanup")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 251, in run_with_error_handling
+    await app.run()
+  File "/home/joker/Documents/sheppard/main.py", line 137, in run
+    await self.cleanup()
+  File "/home/joker/Documents/sheppard/main.py", line 180, in cleanup
+    logger.error(f"Error during cleanup: {str(e)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 255, in run_with_error_handling
+    logger.exception("Unhandled exception in application")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 146, in cleanup
+    logger.info("Starting application cleanup")
+    ^^^^^^
+NameError: name 'logger' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/joker/Documents/sheppard/main.py", line 280, in main
+    loop.run_until_complete(run_with_error_handling(app))
+  File "/home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/joker/Documents/sheppard/main.py", line 258, in run_with_error_handling
+    await app.cleanup()
+  File "/home/joker/Documents/sheppard/main.py", line 180, in cleanup
+    logger.error(f"Error during cleanup: {str(e)}")
+    ^^^^^^
+NameError: name 'logger' is not defined
+2024-10-31 07:05:20 [INFO] src.config.config - Performing cleanup on exit
+2024-10-31 07:12:35 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:12:35 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:12:35 [INFO] __main__ - Starting application...
+2024-10-31 07:12:35 [INFO] __main__ - Starting initialization...
+2024-10-31 07:12:35 [INFO] src.config.config - All required directories validated
+2024-10-31 07:12:35 [ERROR] src.core.sheppard.core - Error initializing components: type object 'DatabaseConfig' has no attribute 'MEMORY_CONFIG'
+2024-10-31 07:12:35 [ERROR] __main__ - Error during initialization: type object 'DatabaseConfig' has no attribute 'MEMORY_CONFIG'
+2024-10-31 07:12:35 [ERROR] __main__ - Initialization failed
+2024-10-31 07:12:35 [INFO] __main__ - Starting application cleanup
+2024-10-31 07:12:35 [ERROR] __main__ - Error during cleanup: 'SheppardApp' object has no attribute '_performance_monitor_task'
+2024-10-31 07:12:35 [INFO] __main__ - Starting application cleanup
+2024-10-31 07:12:35 [ERROR] __main__ - Error during cleanup: 'SheppardApp' object has no attribute '_performance_monitor_task'
+2024-10-31 07:12:35 [INFO] src.config.config - Performing cleanup on exit
+2024-10-31 07:22:33 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:22:33 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:22:33 [INFO] __main__ - Starting application...
+2024-10-31 07:22:33 [INFO] __main__ - Starting initialization...
+2024-10-31 07:22:33 [INFO] src.config.config - All required directories validated
+2024-10-31 07:22:33 [INFO] src.core.memory.validation - Memory validation schemas initialized successfully
+2024-10-31 07:22:33 [INFO] src.core.sheppard.core - Initializing Sheppard core components...
+2024-10-31 07:22:33 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:22:33 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:22:33 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:22:33 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:22:33 [INFO] src.core.sheppard.memory_ops - Initializing memory operations...
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:22:33 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:22:33 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:33 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:33 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:33 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:22:34 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:22:34 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:34 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:34 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:34 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:22:36 [ERROR] src.core.sheppard.memory_ops - Failed to initialize storage manager
+2024-10-31 07:22:36 [ERROR] src.core.sheppard.core - Failed to initialize memory operations
+2024-10-31 07:22:36 [ERROR] __main__ - Failed to initialize Sheppard core
+2024-10-31 07:22:36 [ERROR] __main__ - Initialization failed
+2024-10-31 07:22:36 [INFO] __main__ - Starting application cleanup
+2024-10-31 07:22:36 [INFO] __main__ - Performance metrics saved to /home/joker/Documents/sheppard/data/stats/performance_20241031_072236.json
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 07:22:36 [INFO] __main__ - Application cleanup completed
+2024-10-31 07:22:36 [ERROR] __main__ - Error during final cleanup: module 'asyncio' has no attribute 'all'
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-24' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-25' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-26' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-27' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-28' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-29' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-30' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-31' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-32' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-33' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-34' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-35' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-36' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-37' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-38' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for episodic_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for semantic_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for contextual_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for general_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for abstracted_memory
+2024-10-31 07:22:36 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 07:22:36 [INFO] src.config.config - Performing cleanup on exit
+2024-10-31 07:28:15 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:28:15 [INFO] src.config.config - Logging system initialized
+2024-10-31 07:28:15 [INFO] __main__ - Starting application...
+2024-10-31 07:28:15 [INFO] __main__ - Starting initialization...
+2024-10-31 07:28:15 [INFO] src.config.config - All required directories validated
+2024-10-31 07:28:15 [INFO] src.core.memory.validation - Memory validation schemas initialized successfully
+2024-10-31 07:28:15 [INFO] src.core.sheppard.core - Initializing Sheppard core components...
+2024-10-31 07:28:15 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:28:15 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:28:15 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:28:15 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 07:28:15 [INFO] src.core.sheppard.memory_ops - Initializing memory operations...
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:28:15 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:28:15 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:15 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:15 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:15 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:28:16 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:28:16 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:16 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:16 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:16 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 07:28:18 [ERROR] src.core.sheppard.memory_ops - Failed to initialize storage manager
+2024-10-31 07:28:18 [ERROR] src.core.sheppard.core - Failed to initialize memory operations
+2024-10-31 07:28:18 [ERROR] __main__ - Failed to initialize Sheppard core
+2024-10-31 07:28:18 [ERROR] __main__ - Initialization failed
+2024-10-31 07:28:18 [INFO] __main__ - Starting application cleanup
+2024-10-31 07:28:18 [INFO] __main__ - Performance metrics saved to /home/joker/Documents/sheppard/data/stats/performance_20241031_072818.json
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 07:28:18 [INFO] __main__ - Application cleanup completed
+2024-10-31 07:28:18 [ERROR] __main__ - Error during final cleanup: module 'asyncio' has no attribute 'all'
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-24' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-25' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-26' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-27' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-28' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-29' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-30' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-31' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-32' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-33' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-34' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-35' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-36' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-37' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-38' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for episodic_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for semantic_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for contextual_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for general_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for abstracted_memory
+2024-10-31 07:28:18 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 07:28:18 [INFO] src.config.config - Performing cleanup on exit
+2024-10-31 13:04:20 [INFO] src.config.config - Logging system initialized
+2024-10-31 13:04:20 [INFO] src.config.config - Logging system initialized
+2024-10-31 13:04:20 [INFO] __main__ - Starting application...
+2024-10-31 13:04:20 [INFO] __main__ - Starting initialization...
+2024-10-31 13:04:20 [INFO] src.config.config - All required directories validated
+2024-10-31 13:04:21 [INFO] src.core.memory.validation - Memory validation schemas initialized successfully
+2024-10-31 13:04:21 [INFO] src.core.sheppard.core - Initializing Sheppard core components...
+2024-10-31 13:04:21 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 13:04:21 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 13:04:21 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 13:04:21 [INFO] httpx - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-31 13:04:21 [INFO] src.core.sheppard.memory_ops - Initializing memory operations...
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 13:04:21 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 13:04:21 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:21 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:21 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:21 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 13:04:22 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 13:04:22 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:22 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:22 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:22 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.storage_manager - Initializing storage systems...
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Initializing database connections...
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for episodic_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for semantic_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for contextual_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for general_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized PostgreSQL pool for abstracted_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for ephemeral
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for contextual
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for episodic
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for semantic
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Successfully initialized Redis client for abstracted
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - No database mapping for layer: episodic_memory
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.storage_manager - Failed to initialize PostgreSQL
+2024-10-31 13:04:24 [ERROR] src.core.sheppard.memory_ops - Failed to initialize storage manager
+2024-10-31 13:04:24 [ERROR] src.core.sheppard.core - Failed to initialize memory operations
+2024-10-31 13:04:24 [ERROR] __main__ - Failed to initialize Sheppard core
+2024-10-31 13:04:24 [ERROR] __main__ - Initialization failed
+2024-10-31 13:04:24 [INFO] __main__ - Starting application cleanup
+2024-10-31 13:04:24 [INFO] __main__ - Performance metrics saved to /home/joker/Documents/sheppard/data/stats/performance_20241031_130424.json
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 13:04:24 [INFO] __main__ - Application cleanup completed
+2024-10-31 13:04:24 [ERROR] __main__ - Error during final cleanup: module 'asyncio' has no attribute 'all'
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Starting connection cleanup
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-24' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-25' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-26' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-27' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-28' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-29' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-30' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-31' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-32' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-33' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-34' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-35' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-36' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-37' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [ERROR] src.core.memory.storage.connection - Error closing Redis client: Task <Task pending name='Task-38' coro=<AbstractConnection.disconnect() running at /home/joker/miniconda3/envs/cust/lib/python3.12/site-packages/redis/asyncio/connection.py:423> cb=[gather.<locals>._done_callback() at /home/joker/miniconda3/envs/cust/lib/python3.12/asyncio/tasks.py:767]> got Future <Future pending> attached to a different loop
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for episodic_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for semantic_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for contextual_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for general_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Closed PostgreSQL pool for abstracted_memory
+2024-10-31 13:04:24 [INFO] src.core.memory.storage.connection - Connection cleanup completed
+2024-10-31 13:04:24 [INFO] src.config.config - Performing cleanup on exit

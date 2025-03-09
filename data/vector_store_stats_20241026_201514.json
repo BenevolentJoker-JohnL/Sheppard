@@ -1,0 +1,77 @@
+{
+  "episodic": {
+    "total_documents": 0,
+    "operations": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    },
+    "errors": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    }
+  },
+  "semantic": {
+    "total_documents": 0,
+    "operations": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    },
+    "errors": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    }
+  },
+  "contextual": {
+    "total_documents": 0,
+    "operations": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    },
+    "errors": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    }
+  },
+  "general": {
+    "total_documents": 0,
+    "operations": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    },
+    "errors": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    }
+  },
+  "abstracted": {
+    "total_documents": 0,
+    "operations": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    },
+    "errors": {
+      "add": 0,
+      "update": 0,
+      "delete": 0,
+      "query": 0
+    }
+  }
+}

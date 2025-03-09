@@ -1,0 +1,2764 @@
+2024-10-27 12:11:43,860 - __main__ - INFO - Validating storage system...
+2024-10-27 12:11:43,916 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:11:43,917 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:11:44,045 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:11:44,045 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:11:44,046 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:11:44,046 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:11:44,047 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:11:44,047 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:11:44,156 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:11:44,211 - src.core.memory.validation - ERROR - Error registering schema base_memory: 'SchemaFailsafeManager' object has no attribute 'register_schema'
+2024-10-27 12:11:44,211 - src.core.memory.validation - ERROR - Error registering schema interaction_memory: 'SchemaFailsafeManager' object has no attribute 'register_schema'
+2024-10-27 12:11:44,211 - src.core.sheppard.memory_ops - INFO - Memory validation schemas initialized successfully
+2024-10-27 12:11:44,212 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 12:11:44,212 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 12:11:44,212 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 12:11:44,213 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 12:11:44,213 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 12:11:44,213 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 12:11:44,214 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 12:11:44,214 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 12:11:44,214 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 12:11:44,214 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 12:11:44,215 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 12:11:44,215 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 12:11:44,215 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 12:11:44,215 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 12:11:44,222 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:11:44,226 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:11:44,230 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:11:44,235 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:11:44,286 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:11:44,290 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:11:44,297 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:11:44,299 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:11:44,301 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:11:44,302 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:11:44,304 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:11:44,304 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:11:44,357 - src.core.sheppard.memory_ops - ERROR - Error initializing memory operations: 'MemoryValidator' object has no attribute 'set_schema_manager'
+2024-10-27 12:11:44,357 - src.core.sheppard.core - ERROR - Failed to initialize memory operations
+2024-10-27 12:13:46,900 - __main__ - INFO - Validating storage system...
+2024-10-27 12:13:46,950 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:13:46,951 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:13:47,084 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:13:47,084 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:13:47,085 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:13:47,086 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:13:47,086 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:13:47,086 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:13:47,196 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:13:47,248 - src.core.sheppard.core - ERROR - Error initializing components: MemoryValidator.__init__() takes 1 positional argument but 2 were given
+2024-10-27 12:13:47,248 - __main__ - ERROR - Error during initialization: MemoryValidator.__init__() takes 1 positional argument but 2 were given
+2024-10-27 12:26:09,045 - __main__ - INFO - Validating storage system...
+2024-10-27 12:26:09,096 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:26:09,096 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:26:09,232 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:26:09,233 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:26:09,233 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:26:09,234 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:26:09,234 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:26:09,234 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:26:09,348 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:26:09,401 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 12:26:09,402 - src.core.trust_call - INFO - Successfully registered schema: base_memory
+2024-10-27 12:26:11,398 - src.core.trust_call - ERROR - Error registering schema interaction_memory: maximum recursion depth exceeded
+2024-10-27 12:26:11,398 - src.core.memory.validation - ERROR - Failed to register schema: interaction_memory
+2024-10-27 12:26:11,399 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 12:26:11,399 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 12:26:11,400 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 12:26:11,400 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 12:26:11,400 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 12:26:11,400 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 12:26:11,401 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 12:26:11,401 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 12:26:11,401 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 12:26:11,401 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 12:26:11,402 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 12:26:11,402 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 12:26:11,402 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 12:26:11,402 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 12:26:11,408 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:26:11,413 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:26:11,417 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:26:11,420 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:26:11,467 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:26:11,468 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:26:11,471 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:26:11,472 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:26:11,473 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:26:11,474 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:26:11,475 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:26:11,475 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:26:16,209 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:26:16,609 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:26:17,328 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:26:17,329 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 12:26:53,029 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-10-27 12:27:03,525 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:27:03,526 - src.core.sheppard.response - ERROR - Error generating response: division by zero
+2024-10-27 12:27:06,619 - __main__ - INFO - Successful interaction - Input length: 97, Response length: 79
+2024-10-27 12:42:25,929 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 12:42:25,930 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 12:42:26,014 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:42:26,016 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:42:26,019 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:42:26,020 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:42:26,020 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:42:26,021 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:42:26,022 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:42:26,022 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:42:26,099 - src.core.memory.cleanup - INFO - Memory cleanup completed: {'postgresql_removed': 0, 'chromadb_removed': 0, 'redis_removed': 0, 'timestamp': '2024-10-27T12:42:25.930658', 'layers_cleaned': ['episodic', 'semantic', 'contextual', 'general', 'abstracted'], 'total_removed': 0}
+2024-10-27 12:42:26,099 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 12:42:26,099 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 12:42:28,085 - __main__ - INFO - Validating storage system...
+2024-10-27 12:42:28,135 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:42:28,136 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:42:28,264 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:42:28,265 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:42:28,265 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:42:28,266 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:42:28,266 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:42:28,266 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:42:28,379 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:42:28,432 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 12:42:28,433 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 12:42:28,433 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 12:42:28,434 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 12:42:28,434 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 12:42:28,434 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 12:42:28,434 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 12:42:28,435 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 12:42:28,435 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 12:42:28,435 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 12:42:28,435 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 12:42:28,436 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 12:42:28,436 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 12:42:28,436 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 12:42:28,436 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 12:42:28,443 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:42:28,447 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:42:28,451 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:42:28,456 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:42:28,505 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:42:28,506 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:42:28,509 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:42:28,510 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:42:28,511 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:42:28,512 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:42:28,513 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:42:28,513 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:42:30,741 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:42:31,142 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:42:31,619 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:42:31,619 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 12:42:47,711 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-10-27 12:42:47,716 - src.core.sheppard.interaction - ERROR - Error processing interaction: 'ResponseGenerator' object has no attribute 'generate'
+2024-10-27 12:42:47,717 - __main__ - INFO - Successful interaction - Input length: 54, Response length: 52
+2024-10-27 12:45:28,926 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 12:45:28,926 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 12:45:28,976 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:45:28,977 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:45:28,980 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:45:28,981 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:45:28,982 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:45:28,982 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:45:28,983 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:45:28,983 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:45:29,064 - src.core.memory.cleanup - INFO - Memory cleanup completed: {'postgresql_removed': 0, 'chromadb_removed': 0, 'redis_removed': 0, 'timestamp': '2024-10-27T12:45:28.927160', 'layers_cleaned': ['episodic', 'semantic', 'contextual', 'general', 'abstracted'], 'total_removed': 0}
+2024-10-27 12:45:29,064 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 12:45:29,064 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 12:45:31,997 - __main__ - INFO - Validating storage system...
+2024-10-27 12:45:32,050 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:45:32,051 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:45:32,181 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:45:32,182 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:45:32,182 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:45:32,183 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:45:32,183 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:45:32,183 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:45:32,288 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:45:32,343 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 12:45:32,344 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 12:45:32,344 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 12:45:32,344 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 12:45:32,345 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 12:45:32,345 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 12:45:32,345 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 12:45:32,346 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 12:45:32,346 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 12:45:32,346 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 12:45:32,346 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 12:45:32,347 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 12:45:32,347 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 12:45:32,347 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 12:45:32,347 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 12:45:32,354 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:45:32,360 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:45:32,363 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:45:32,368 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 12:45:32,417 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:45:32,418 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:45:32,420 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:45:32,421 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:45:32,421 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:45:32,422 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:45:32,422 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:45:32,422 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:45:32,953 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:45:33,798 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:45:34,286 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 12:45:34,287 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 12:45:40,901 - src.core.sheppard.core - ERROR - Error processing input: 'InteractionHandler' object has no attribute 'process'
+2024-10-27 12:45:40,902 - __main__ - INFO - Successful interaction - Input length: 48, Response length: 52
+2024-10-27 12:46:42,891 - src.core.sheppard.core - ERROR - Error during shutdown: 'InteractionHandler' object has no attribute 'cleanup'
+2024-10-27 12:46:42,891 - __main__ - ERROR - Error during Sheppard shutdown: 'InteractionHandler' object has no attribute 'cleanup'
+2024-10-27 12:52:10,165 - __main__ - INFO - Validating storage system...
+2024-10-27 12:52:10,208 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 12:52:10,209 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 12:52:10,336 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 12:52:10,337 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 12:52:10,338 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 12:52:10,338 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 12:52:10,339 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 12:52:10,339 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 12:52:10,453 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 12:52:10,506 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 12:52:10,506 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 12:52:10,507 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 12:52:10,507 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 12:52:10,508 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 12:52:10,508 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 12:52:10,508 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 12:52:10,509 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 12:52:10,509 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 12:52:10,509 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 12:52:10,509 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 12:52:10,510 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 12:52:10,510 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 12:52:10,510 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 12:52:10,510 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 12:52:10,510 - __main__ - ERROR - Error during initialization: 'Sheppard' object has no attribute 'initialize'
+2024-10-27 12:52:10,510 - __main__ - ERROR - Error during Sheppard shutdown: 'Sheppard' object has no attribute 'shutdown'
+2024-10-27 12:57:07,207 - __main__ - ERROR - Error during initialization: name 'check_system_requirements' is not defined
+2024-10-27 16:51:48,228 - __main__ - ERROR - Error during initialization: name 'check_system_requirements' is not defined
+2024-10-27 17:24:20,710 - __main__ - INFO - Validating storage system...
+2024-10-27 17:24:20,845 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 17:24:20,848 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 17:24:21,105 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 17:24:21,109 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 17:24:21,113 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 17:24:21,116 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 17:24:21,121 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 17:24:21,121 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 17:24:21,239 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "2368.54MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "51.8GB",
+    "used": "6.5GB",
+    "percent": "17.2%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      }
+    ]
+  }
+}
+2024-10-27 17:24:21,239 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 17:24:21,292 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 17:24:21,293 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 17:24:21,293 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 17:24:21,294 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 17:24:21,294 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 17:24:21,295 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 17:24:21,295 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 17:24:21,295 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 17:24:21,295 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 17:24:21,296 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 17:24:22,323 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:24:22,328 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:24:22,333 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:24:22,337 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:24:22,471 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 17:24:22,474 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 17:24:22,484 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 17:24:22,487 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 17:24:22,489 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 17:24:22,491 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 17:24:22,492 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 17:24:22,492 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 17:24:27,332 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:24:27,704 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:24:28,397 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:24:28,397 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 17:25:12,301 - src.core.sheppard.core - ERROR - Error checking system health: 'MemoryOperations' object has no attribute 'validate_connection'
+2024-10-27 17:25:12,305 - __main__ - INFO - Successful interaction - Input length: 150, Response length: 59
+2024-10-27 17:25:28,406 - src.core.sheppard.core - ERROR - Error checking system health: 'MemoryOperations' object has no attribute 'validate_connection'
+2024-10-27 17:25:28,406 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:26:28,407 - src.core.sheppard.core - ERROR - Error checking system health: 'MemoryOperations' object has no attribute 'validate_connection'
+2024-10-27 17:26:28,408 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:27:14,595 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 17:27:14,596 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 17:27:14,596 - src.core.sheppard.interaction - INFO - Interaction cache cleared
+2024-10-27 17:27:14,596 - src.core.sheppard.interaction - INFO - Interaction statistics reset
+2024-10-27 17:27:14,596 - src.core.sheppard.interaction - INFO - Interaction handler cleanup completed
+2024-10-27 17:27:14,638 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 17:27:14,640 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 17:27:14,643 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 17:27:14,643 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 17:27:14,644 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 17:27:14,645 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 17:27:14,645 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 17:27:14,645 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 17:27:14,710 - __main__ - INFO - Received signal 2, initiating shutdown
+2024-10-27 17:27:14,718 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 17:27:14,718 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 17:27:14,718 - src.core.sheppard.interaction - INFO - Interaction cache cleared
+2024-10-27 17:27:14,718 - src.core.sheppard.interaction - INFO - Interaction statistics reset
+2024-10-27 17:27:14,718 - src.core.sheppard.interaction - INFO - Interaction handler cleanup completed
+2024-10-27 17:27:14,719 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 17:27:14,719 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 17:27:14,723 - src.core.memory.cleanup - INFO - Memory cleanup completed: {'postgresql_removed': 0, 'chromadb_removed': 0, 'redis_removed': 0, 'timestamp': '2024-10-27T17:27:14.596751', 'layers_cleaned': ['episodic', 'semantic', 'contextual', 'general', 'abstracted'], 'total_removed': 0}
+2024-10-27 17:27:14,723 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 17:27:14,724 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 17:30:29,706 - __main__ - INFO - Validating storage system...
+2024-10-27 17:30:29,745 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 17:30:29,746 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 17:30:29,837 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 17:30:29,837 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 17:30:29,838 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 17:30:29,839 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 17:30:29,839 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 17:30:29,839 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 17:30:29,947 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "3186.94MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "51.8GB",
+    "used": "6.5GB",
+    "percent": "17.2%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      }
+    ]
+  }
+}
+2024-10-27 17:30:29,947 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 17:30:30,004 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 17:30:30,005 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 17:30:30,005 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 17:30:30,005 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 17:30:30,006 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 17:30:30,006 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 17:30:30,006 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 17:30:30,007 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 17:30:30,007 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 17:30:30,007 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 17:30:30,007 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 17:30:30,008 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 17:30:30,008 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 17:30:30,008 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 17:30:30,008 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 17:30:31,041 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:30:31,045 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:30:31,049 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:30:31,054 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 17:30:31,191 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 17:30:31,193 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 17:30:31,201 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 17:30:31,203 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 17:30:31,205 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 17:30:31,207 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 17:30:31,208 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 17:30:31,208 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 17:30:33,367 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:30:34,277 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:30:34,769 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 17:30:34,769 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 17:31:09,148 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-10-27 17:31:09,150 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:31:09,150 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:31:09,152 - __main__ - INFO - Successful interaction - Input length: 164, Response length: 59
+2024-10-27 17:31:34,824 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:31:34,824 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:31:34,824 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:32:34,882 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:32:34,882 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:32:34,882 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:33:34,937 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:33:34,937 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:33:34,937 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:34:34,998 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:34:34,998 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:34:34,998 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:35:35,041 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:35:35,041 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:35:35,041 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:36:35,089 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:36:35,089 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:36:35,089 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:37:35,144 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:37:35,144 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:37:35,144 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:38:35,207 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:38:35,207 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:38:35,207 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:39:35,268 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:39:35,268 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:39:35,268 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 17:40:35,319 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 17:40:35,319 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 17:40:35,319 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:29:52,595 - __main__ - INFO - Validating storage system...
+2024-10-27 21:29:52,662 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 21:29:52,664 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 21:29:52,796 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 21:29:52,797 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 21:29:52,797 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 21:29:52,798 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 21:29:52,798 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 21:29:52,798 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 21:29:52,961 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "3568.68MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "53.1GB",
+    "used": "5.2GB",
+    "percent": "15.1%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      }
+    ]
+  }
+}
+2024-10-27 21:29:52,961 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 21:29:53,016 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 21:29:53,017 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 21:29:53,017 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 21:29:53,017 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 21:29:53,018 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 21:29:53,018 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 21:29:53,018 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 21:29:53,019 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 21:29:53,019 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 21:29:53,019 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 21:29:53,019 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 21:29:53,020 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 21:29:53,020 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 21:29:53,020 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 21:29:53,020 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 21:29:54,052 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 21:29:54,058 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 21:29:54,061 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 21:29:54,065 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 21:29:54,158 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 21:29:54,160 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 21:29:54,167 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 21:29:54,170 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 21:29:54,172 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 21:29:54,174 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 21:29:54,176 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 21:29:54,176 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 21:29:58,917 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 21:29:59,765 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 21:30:00,378 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 21:30:00,379 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 21:30:06,857 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-10-27 21:30:06,858 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:30:06,858 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:30:06,859 - __main__ - INFO - Successful interaction - Input length: 3, Response length: 59
+2024-10-27 21:31:00,454 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:31:00,454 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:31:00,454 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:32:00,503 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:32:00,503 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:32:00,503 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:33:00,553 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:33:00,554 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:33:00,554 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:34:00,599 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:34:00,599 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:34:00,599 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:35:00,641 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:35:00,641 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:35:00,641 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:36:00,687 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:36:00,687 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:36:00,687 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:37:00,732 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:37:00,732 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:37:00,732 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:38:00,785 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:38:00,785 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:38:00,785 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:39:00,831 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:39:00,831 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:39:00,831 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:40:00,878 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:40:00,878 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:40:00,878 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:41:00,921 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:41:00,921 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:41:00,921 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:42:00,971 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:42:00,971 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:42:00,971 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:43:01,036 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:43:01,036 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:43:01,036 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:44:01,082 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:44:01,082 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:44:01,082 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:45:01,136 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:45:01,136 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:45:01,136 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:46:01,186 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:46:01,187 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:46:01,187 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:47:01,232 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:47:01,232 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:47:01,232 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:48:01,289 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:48:01,289 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:48:01,290 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:49:01,341 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:49:01,341 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:49:01,341 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:50:01,387 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:50:01,387 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:50:01,387 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:51:01,440 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:51:01,440 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:51:01,440 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:52:01,488 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:52:01,488 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:52:01,488 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:53:01,541 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:53:01,541 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:53:01,541 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:54:01,586 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:54:01,586 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:54:01,586 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:55:01,638 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:55:01,638 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:55:01,638 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:56:01,690 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:56:01,690 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:56:01,690 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:57:01,735 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:57:01,735 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:57:01,735 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:58:01,779 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:58:01,779 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:58:01,779 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 21:59:01,832 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 21:59:01,832 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 21:59:01,832 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:00:01,876 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:00:01,876 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:00:01,876 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:01:01,920 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:01:01,920 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:01:01,920 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:02:01,958 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:02:01,958 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:02:01,958 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:03:02,005 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:03:02,005 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:03:02,005 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:04:02,051 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:04:02,051 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:04:02,051 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:05:02,095 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:05:02,095 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:05:02,095 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:06:02,146 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:06:02,146 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:06:02,146 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:07:02,190 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:07:02,190 - src.core.sheppard.core - ERROR - Error checking system health: 'ToolManager' object has no attribute 'validate_health'
+2024-10-27 22:07:02,190 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:07:33,023 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 22:07:33,023 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 22:07:33,023 - src.core.sheppard.interaction - INFO - Interaction cache cleared
+2024-10-27 22:07:33,023 - src.core.sheppard.interaction - INFO - Interaction statistics reset
+2024-10-27 22:07:33,024 - src.core.sheppard.interaction - INFO - Interaction handler cleanup completed
+2024-10-27 22:07:33,083 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:07:33,083 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:07:33,085 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:07:33,086 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:07:33,087 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:07:33,088 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:07:33,088 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:07:33,088 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:07:33,175 - src.core.memory.cleanup - INFO - Memory cleanup completed: {'postgresql_removed': 0, 'chromadb_removed': 0, 'redis_removed': 0, 'timestamp': '2024-10-27T22:07:33.024092', 'layers_cleaned': ['episodic', 'semantic', 'contextual', 'general', 'abstracted'], 'total_removed': 0}
+2024-10-27 22:07:33,176 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 22:07:33,176 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 22:07:36,581 - __main__ - INFO - Validating storage system...
+2024-10-27 22:07:36,643 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:07:36,644 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:07:36,731 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:07:36,732 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:07:36,733 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:07:36,733 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:07:36,734 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:07:36,734 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:07:36,845 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "3448.28MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "52.0GB",
+    "used": "6.2GB",
+    "percent": "16.8%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      }
+    ]
+  }
+}
+2024-10-27 22:07:36,845 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 22:07:36,898 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 22:07:36,899 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 22:07:36,899 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 22:07:36,900 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 22:07:36,900 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 22:07:36,901 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 22:07:36,901 - src.core.trust_call - INFO - Successfully registered tool: calculate
+2024-10-27 22:07:36,901 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 22:07:36,901 - src.core.trust_call - INFO - Successfully registered tool: search_web
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered schema: summarize_text
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered tool: summarize_text
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered schema: analyze_sentiment
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered tool: analyze_sentiment
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered schema: extract_entities
+2024-10-27 22:07:36,902 - src.core.trust_call - INFO - Successfully registered tool: extract_entities
+2024-10-27 22:07:37,932 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 22:07:37,935 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 22:07:37,940 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 22:07:37,945 - httpx - INFO - HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-27 22:07:38,013 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:07:38,014 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:07:38,019 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:07:38,021 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:07:38,023 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:07:38,025 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:07:38,028 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:07:38,028 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:07:40,294 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 22:07:40,698 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 22:07:41,213 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+2024-10-27 22:07:41,214 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:07:41,214 - src.core.sheppard.core - INFO - ✓ Sheppard initialized successfully
+2024-10-27 22:07:50,939 - httpx - INFO - HTTP Request: POST http://localhost:11434/api/embeddings "HTTP/1.1 200 OK"
+2024-10-27 22:07:50,941 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:07:50,941 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:07:50,941 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:07:50,945 - __main__ - INFO - Successful interaction - Input length: 4, Response length: 59
+2024-10-27 22:08:41,278 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:08:41,278 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:08:41,278 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:08:41,278 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:09:41,327 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:09:41,327 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:09:41,327 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:09:41,327 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:10:41,372 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:10:41,372 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:10:41,372 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:10:41,372 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:11:41,420 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:11:41,420 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:11:41,420 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:11:41,420 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:12:41,475 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:12:41,476 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:12:41,476 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:12:41,476 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:13:41,522 - src.core.sheppard.memory_ops - INFO - All memory connections validated successfully
+2024-10-27 22:13:41,522 - src.core.sheppard.tools - ERROR - Schema manager is not properly initialized
+2024-10-27 22:13:41,522 - src.core.sheppard.core - ERROR - Tool system health check failed
+2024-10-27 22:13:41,522 - src.core.sheppard.core - WARNING - System health check failed
+2024-10-27 22:14:06,513 - src.core.sheppard.tools - INFO - Shutting down tool manager
+2024-10-27 22:14:06,513 - src.core.sheppard.tools - INFO - Tool manager shutdown completed
+2024-10-27 22:14:06,513 - src.core.sheppard.interaction - INFO - Interaction cache cleared
+2024-10-27 22:14:06,513 - src.core.sheppard.interaction - INFO - Interaction statistics reset
+2024-10-27 22:14:06,513 - src.core.sheppard.interaction - INFO - Interaction handler cleanup completed
+2024-10-27 22:14:06,598 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:14:06,599 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:14:06,601 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:14:06,601 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:14:06,602 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:14:06,603 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:14:06,603 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:14:06,603 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:14:06,675 - src.core.memory.cleanup - INFO - Memory cleanup completed: {'postgresql_removed': 0, 'chromadb_removed': 0, 'redis_removed': 0, 'timestamp': '2024-10-27T22:14:06.513636', 'layers_cleaned': ['episodic', 'semantic', 'contextual', 'general', 'abstracted'], 'total_removed': 0}
+2024-10-27 22:14:06,675 - src.core.sheppard.memory_ops - INFO - Memory operations cleanup completed successfully
+2024-10-27 22:14:06,675 - src.core.sheppard.core - INFO - ✓ Sheppard shutdown completed successfully
+2024-10-27 22:14:11,056 - __main__ - INFO - Validating storage system...
+2024-10-27 22:14:11,101 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:14:11,102 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:14:11,197 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:14:11,197 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:14:11,198 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:14:11,199 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:14:11,199 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:14:11,199 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:14:11,309 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "3279.71MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "51.6GB",
+    "used": "6.6GB",
+    "percent": "17.4%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      }
+    ]
+  }
+}
+2024-10-27 22:14:11,309 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 22:14:11,364 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 22:14:11,365 - src.core.trust_call - INFO - Successfully registered schema: base_tool
+2024-10-27 22:14:11,366 - src.core.trust_call - INFO - Successfully registered schema: tool_response
+2024-10-27 22:14:11,367 - src.core.trust_call - INFO - Successfully registered schema: tool_validation
+2024-10-27 22:14:11,367 - src.core.trust_call - INFO - Successfully registered schema: user_profile
+2024-10-27 22:14:11,368 - src.core.trust_call - INFO - Successfully registered schema: calculation
+2024-10-27 22:14:11,368 - src.core.trust_call - INFO - Successfully registered schema: text_analysis
+2024-10-27 22:14:11,369 - src.core.trust_call - INFO - Successfully registered schema: web_search
+2024-10-27 22:14:11,905 - src.core.trust_call - ERROR - Error registering schema summarize: maximum recursion depth exceeded
+2024-10-27 22:14:11,906 - src.core.sheppard.tools - ERROR - Failed to register schema summarize
+2024-10-27 22:14:11,906 - src.core.sheppard.tools - ERROR - Error registering schema summarize: Failed to register schema summarize
+2024-10-27 22:14:11,906 - src.core.sheppard.tools - ERROR - Error during tool initialization: Failed to register schema summarize
+2024-10-27 22:14:11,906 - src.core.sheppard.core - ERROR - Error initializing components: Tool initialization failed
+2024-10-27 22:14:11,906 - __main__ - ERROR - Error during initialization: Tool initialization failed
+2024-10-27 22:18:43,555 - __main__ - INFO - Validating storage system...
+2024-10-27 22:18:43,625 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:18:43,627 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:18:43,723 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:18:43,724 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:18:43,724 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:18:43,725 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:18:43,725 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:18:43,725 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:18:43,850 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "2007.95MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "51.6GB",
+    "used": "6.6GB",
+    "percent": "17.4%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      }
+    ]
+  }
+}
+2024-10-27 22:18:43,851 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 22:18:43,904 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 22:18:43,905 - src.core.trust_call - INFO - Successfully registered schema: base_tool
+2024-10-27 22:18:43,906 - src.core.trust_call - INFO - Successfully registered schema: tool_response
+2024-10-27 22:18:43,906 - src.core.trust_call - INFO - Successfully registered schema: tool_validation
+2024-10-27 22:18:43,906 - src.core.sheppard.tools - ERROR - Error during tool initialization: name 'null' is not defined
+2024-10-27 22:18:43,906 - src.core.sheppard.core - ERROR - Error initializing components: Tool initialization failed
+2024-10-27 22:18:43,906 - __main__ - ERROR - Error during initialization: Tool initialization failed
+2024-10-27 22:35:24,863 - __main__ - INFO - Validating storage system...
+2024-10-27 22:35:24,927 - src.core.memory.storage.storage_manager - INFO - Successfully initialized PostgreSQL
+2024-10-27 22:35:24,928 - src.core.memory.storage.storage_manager - INFO - Successfully initialized Redis
+2024-10-27 22:35:25,013 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: episodic_memories
+2024-10-27 22:35:25,014 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: semantic_memories
+2024-10-27 22:35:25,014 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: contextual_memories
+2024-10-27 22:35:25,015 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: general_memories
+2024-10-27 22:35:25,016 - src.core.memory.storage.vector_store - INFO - Retrieved existing collection: abstracted_memories
+2024-10-27 22:35:25,016 - src.core.memory.storage.storage_manager - INFO - Successfully initialized VectorStore
+2024-10-27 22:35:25,143 - __main__ - INFO - System Information:
+{
+  "system": {
+    "python_version": "3.12.7",
+    "os": "Linux",
+    "os_version": "#202405300957~1726766035~22.04~4092a0e SMP PREEMPT_DYNAMIC Thu S",
+    "machine": "x86_64",
+    "processor": "x86_64"
+  },
+  "cpu": {
+    "physical_cores": 16,
+    "total_cores": 24,
+    "max_frequency": "4700.00MHz",
+    "min_frequency": "800.00MHz",
+    "current_frequency": "4119.82MHz"
+  },
+  "memory": {
+    "total": "62.5GB",
+    "available": "51.0GB",
+    "used": "7.2GB",
+    "percent": "18.4%"
+  },
+  "disk": {
+    "total": "3657.6GB",
+    "free": "1278.0GB",
+    "used": "2193.7GB",
+    "percent": "63.2%"
+  },
+  "network": {
+    "interfaces": [
+      "lo",
+      "enp6s0",
+      "docker0",
+      "br-e9b22ad0b7af",
+      "wlo1"
+    ]
+  },
+  "ollama": {
+    "version": "0.3.5",
+    "status": "Running",
+    "api_url": "http://localhost:11434",
+    "available_models": [
+      {
+        "name": "llama3.2:latest",
+        "normalized_name": "llama3.2"
+      },
+      {
+        "name": "llama3.1:latest",
+        "normalized_name": "llama3.1"
+      },
+      {
+        "name": "nomic-embed-text:latest",
+        "normalized_name": "nomic-embed-text"
+      },
+      {
+        "name": "mistral-nemo:latest",
+        "normalized_name": "mistral-nemo"
+      },
+      {
+        "name": "benevolentjoker/belial2.0:latest",
+        "normalized_name": "benevolentjoker/belial2.0"
+      },
+      {
+        "name": "belial2.0:latest",
+        "normalized_name": "belial2.0"
+      },
+      {
+        "name": "benevolentjoker/belial:latest",
+        "normalized_name": "benevolentjoker/belial"
+      },
+      {
+        "name": "belial:latest",
+        "normalized_name": "belial"
+      },
+      {
+        "name": "benevolentjoker/satan2.0:latest",
+        "normalized_name": "benevolentjoker/satan2.0"
+      },
+      {
+        "name": "satan2.0:latest",
+        "normalized_name": "satan2.0"
+      },
+      {
+        "name": "benevolentjoker/joker:latest",
+        "normalized_name": "benevolentjoker/joker"
+      },
+      {
+        "name": "joker:latest",
+        "normalized_name": "joker"
+      },
+      {
+        "name": "benevolentjoker/nsfwmonika:latest",
+        "normalized_name": "benevolentjoker/nsfwmonika"
+      },
+      {
+        "name": "nsfwvanessa:latest",
+        "normalized_name": "nsfwvanessa"
+      },
+      {
+        "name": "benevolentjoker/levi:latest",
+        "normalized_name": "benevolentjoker/levi"
+      },
+      {
+        "name": "orca-mini:latest",
+        "normalized_name": "orca-mini"
+      },
+      {
+        "name": "benevolentjoker/leviathan:latest",
+        "normalized_name": "benevolentjoker/leviathan"
+      },
+      {
+        "name": "mistral:latest",
+        "normalized_name": "mistral"
+      },
+      {
+        "name": "deepseek-coder:latest",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "command-r-plus:latest",
+        "normalized_name": "command-r-plus"
+      },
+      {
+        "name": "firefunction-v2:latest",
+        "normalized_name": "firefunction-v2"
+      },
+      {
+        "name": "llama3:latest",
+        "normalized_name": "llama3"
+      },
+      {
+        "name": "sqs/starchat:beta-f16",
+        "normalized_name": "sqs/starchat"
+      },
+      {
+        "name": "llama3-chatqa:latest",
+        "normalized_name": "llama3-chatqa"
+      },
+      {
+        "name": "neural-chat:latest",
+        "normalized_name": "neural-chat"
+      },
+      {
+        "name": "rodneyxr/neural-chat:7b-3.1",
+        "normalized_name": "rodneyxr/neural-chat"
+      },
+      {
+        "name": "levi:latest",
+        "normalized_name": "levi"
+      },
+      {
+        "name": "benevolentjoker/demarquiscousin:latest",
+        "normalized_name": "benevolentjoker/demarquiscousin"
+      },
+      {
+        "name": "demarquistheiii:latest",
+        "normalized_name": "demarquistheiii"
+      },
+      {
+        "name": "llava:latest",
+        "normalized_name": "llava"
+      },
+      {
+        "name": "bakllava:latest",
+        "normalized_name": "bakllava"
+      },
+      {
+        "name": "benevolentjoker/the_illustrator:latest",
+        "normalized_name": "benevolentjoker/the_illustrator"
+      },
+      {
+        "name": "the_illustrator:latest",
+        "normalized_name": "the_illustrator"
+      },
+      {
+        "name": "json:latest",
+        "normalized_name": "json"
+      },
+      {
+        "name": "mxbai-embed-large:latest",
+        "normalized_name": "mxbai-embed-large"
+      },
+      {
+        "name": "benevolentjoker/the_caldecott:latest",
+        "normalized_name": "benevolentjoker/the_caldecott"
+      },
+      {
+        "name": "the_caldecott:latest",
+        "normalized_name": "the_caldecott"
+      },
+      {
+        "name": "benevolentjoker/the_architectmini:latest",
+        "normalized_name": "benevolentjoker/the_architectmini"
+      },
+      {
+        "name": "thearchitectmini:latest",
+        "normalized_name": "thearchitectmini"
+      },
+      {
+        "name": "benevolentjoker/the_architect:latest",
+        "normalized_name": "benevolentjoker/the_architect"
+      },
+      {
+        "name": "the_architect:latest",
+        "normalized_name": "the_architect"
+      },
+      {
+        "name": "benevolentjoker/the_economistmini:latest",
+        "normalized_name": "benevolentjoker/the_economistmini"
+      },
+      {
+        "name": "the_economistmini:latest",
+        "normalized_name": "the_economistmini"
+      },
+      {
+        "name": "benevolentjoker/the_economist:latest",
+        "normalized_name": "benevolentjoker/the_economist"
+      },
+      {
+        "name": "the_economist:latest",
+        "normalized_name": "the_economist"
+      },
+      {
+        "name": "tinydolphin:latest",
+        "normalized_name": "tinydolphin"
+      },
+      {
+        "name": "tinyllama:latest",
+        "normalized_name": "tinyllama"
+      },
+      {
+        "name": "notux:latest",
+        "normalized_name": "notux"
+      },
+      {
+        "name": "notus:latest",
+        "normalized_name": "notus"
+      },
+      {
+        "name": "mixtral:latest",
+        "normalized_name": "mixtral"
+      },
+      {
+        "name": "dolphin-mixtral:latest",
+        "normalized_name": "dolphin-mixtral"
+      },
+      {
+        "name": "benevolentjoker/dadatron2k24:latest",
+        "normalized_name": "benevolentjoker/dadatron2k24"
+      },
+      {
+        "name": "dadatron2k24:latest",
+        "normalized_name": "dadatron2k24"
+      },
+      {
+        "name": "deepseek-coder:6.7b",
+        "normalized_name": "deepseek-coder"
+      },
+      {
+        "name": "mannix/llama3.1-8b-lexi:latest",
+        "normalized_name": "mannix/llama3.1-8b-lexi"
+      },
+      {
+        "name": "codegeex4:latest",
+        "normalized_name": "codegeex4"
+      },
+      {
+        "name": "codellama:latest",
+        "normalized_name": "codellama"
+      },
+      {
+        "name": "benevolentjoker/nsfwvanessa:latest",
+        "normalized_name": "benevolentjoker/nsfwvanessa"
+      },
+      {
+        "name": "dolphin-mistral:latest",
+        "normalized_name": "dolphin-mistral"
+      },
+      {
+        "name": "benevolentjoker/satan:latest",
+        "normalized_name": "benevolentjoker/satan"
+      },
+      {
+        "name": "cas/daredevil-8b-abliterated-dpomix.i1:latest",
+        "normalized_name": "cas/daredevil-8b-abliterated-dpomix.i1"
+      },
+      {
+        "name": "benevolentjoker/nsfwwurm:latest",
+        "normalized_name": "benevolentjoker/nsfwwurm"
+      }
+    ]
+  }
+}
+2024-10-27 22:35:25,144 - __main__ - INFO - ✓ All components validated successfully
+2024-10-27 22:35:25,195 - src.core.memory.validation - INFO - Memory validation schemas initialized successfully
+2024-10-27 22:35:25,197 - src.core.trust_call - INFO - Successfully registered schema: base_tool
+2024-10-27 22:35:25,197 - src.core.trust_call - INFO - Successfully registered schema: tool_response
+2024-10-27 22:35:25,198 - src.core.trust_call - INFO - Successfully registered schema: tool_validation
+2024-10-27 22:35:25,198 - src.core.trust_call - INFO - Successfully registered schema: calculate
+2024-10-27 22:35:25,199 - src.core.trust_call - INFO - Successfully registered schema: search_web
+2024-10-27 22:35:25,770 - src.core.trust_call - ERROR - Error registering schema summarize_text: maximum recursion depth exceeded
+2024-10-27 22:35:25,771 - src.core.sheppard.tools - ERROR - Failed to register schema summarize_text
+2024-10-27 22:35:25,771 - src.core.sheppard.tools - ERROR - Error registering schema summarize_text: Failed to register schema summarize_text
+2024-10-27 22:35:25,771 - src.core.sheppard.tools - ERROR - Error during tool initialization: Failed to register schema summarize_text
+2024-10-27 22:35:25,771 - src.core.sheppard.core - ERROR - Error initializing components: Tool initialization failed
+2024-10-27 22:35:25,771 - __main__ - ERROR - Error during initialization: Tool initialization failed

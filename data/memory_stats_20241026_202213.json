@@ -1,0 +1,52 @@
+{
+  "memory_operations": {
+    "total_memories": 0,
+    "unique_memories": 0,
+    "memories_per_state": {},
+    "cache_performance": {
+      "hits": 0,
+      "misses": 1,
+      "hit_ratio": 0.0
+    },
+    "embedding_stats": {
+      "total_embeddings": 1,
+      "failed_embeddings": 0,
+      "success_rate": 1.0
+    },
+    "average_importance": 0.0,
+    "state_transitions": {},
+    "last_cleanup": "2024-10-26T20:15:14.863855"
+  },
+  "storage": {
+    "operations": {
+      "store": 0,
+      "retrieve": 0,
+      "cleanup": 0
+    },
+    "errors": {
+      "store": 0,
+      "retrieve": 0,
+      "cleanup": 0
+    },
+    "average_latency": {
+      "store": 0,
+      "retrieve": 0,
+      "cleanup": 0
+    },
+    "timeouts": {
+      "store": 30,
+      "retrieve": 15,
+      "cleanup": 60
+    }
+  },
+  "cache": {
+    "size": 1,
+    "hits": 0,
+    "misses": 1
+  },
+  "embeddings": {
+    "total": 1,
+    "failed": 0
+  },
+  "timestamp": "2024-10-26T20:22:13.325120"
+}

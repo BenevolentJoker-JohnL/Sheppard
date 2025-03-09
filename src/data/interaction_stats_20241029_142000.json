@@ -1,0 +1,21 @@
+{
+  "total_interactions": 1,
+  "successful_interactions": 1,
+  "failed_interactions": 0,
+  "success_rate": "100.00%",
+  "average_response_time": "18.82s",
+  "tool_usage": {},
+  "last_interaction": "2024-10-29T14:18:06.885611",
+  "cache_performance": {
+    "hits": 0,
+    "misses": 1,
+    "hit_rate": "0.00%",
+    "current_size": 0
+  },
+  "memory_operations": {
+    "store": 1,
+    "retrieve": 1,
+    "failed": 0
+  },
+  "error_distribution": {}
+}

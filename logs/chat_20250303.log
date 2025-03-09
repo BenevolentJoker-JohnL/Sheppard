@@ -1,0 +1,17 @@
+2025-03-03 17:27:22,187 - src.config.logging - INFO - Logging initialized:
+2025-03-03 17:27:22,188 - src.config.logging - INFO - Default level: INFO
+2025-03-03 17:27:22,189 - src.config.logging - INFO - Log file: /home/joker2/Desktop/sheppard/logs/chat_20250303.log
+2025-03-03 17:27:22,190 - src.memory.manager - INFO - Ollama client set in memory manager
+2025-03-03 17:27:22,249 - src.memory.stores.redis - INFO - Loaded 217 memories from Redis
+2025-03-03 17:27:22,250 - src.memory.stores.redis - INFO - Redis store initialized successfully
+2025-03-03 17:27:22,679 - src.memory.stores.chroma - INFO - ChromaDB store initialized successfully
+2025-03-03 17:27:22,681 - src.memory.manager - INFO - Memory manager initialized successfully
+2025-03-03 17:27:22,692 - src.research.content_processor - INFO - Firecrawl client set in ContentProcessor
+2025-03-03 17:27:23,248 - undetected_chromedriver.patcher - INFO - patching driver executable /home/joker2/.local/share/undetected_chromedriver/undetected_chromedriver
+2025-03-03 17:27:23,596 - uc - INFO - setting properties for headless
+2025-03-03 17:27:23,631 - src.research.browser_manager - INFO - Browser manager initialized successfully
+2025-03-03 17:27:23,636 - src.research.task_manager - INFO - Task manager initialized successfully
+2025-03-03 17:27:23,637 - src.research.content_processor - INFO - Content processor initialized successfully
+2025-03-03 17:27:23,637 - src.research.base_system - INFO - Base research system initialized successfully
+2025-03-03 17:27:23,638 - src.research.system - INFO - Research system initialized successfully
+2025-03-03 17:27:23,639 - src.core.chat - INFO - ChatApp initialized successfully

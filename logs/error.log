@@ -1,0 +1,77 @@
+2024-10-28 13:19:41,178 [ERROR] src.core.sheppard.tools.manager:72: Tool summarizer failed validation
+2024-10-28 13:19:41,178 [ERROR] src.core.sheppard.tools.manager:55: Failed to register tool summarizer
+2024-10-28 13:19:41,179 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 13:30:59,273 [ERROR] src.core.sheppard.tools.manager:107: Failed to register tool implementation: calculator
+2024-10-28 13:30:59,274 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 13:37:53,943 [ERROR] src.core.sheppard.tools.manager:107: Failed to register tool implementation: calculator
+2024-10-28 13:37:53,944 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:06:05,221 [ERROR] src.core.sheppard.tools.manager:107: Failed to register tool implementation: calculator
+2024-10-28 18:06:05,222 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:07:56,581 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:07:56,582 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:13:24,975 [ERROR] __main__:223: Error during initialization: 'SheppardApp' object has no attribute 'validate_storage_system'
+2024-10-28 18:13:24,976 [ERROR] __main__:133: Error during cleanup: 'list' object is not callable
+2024-10-28 18:13:24,976 [ERROR] __main__:133: Error during cleanup: 'list' object is not callable
+2024-10-28 18:15:39,888 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:15:39,889 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:23:44,357 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:23:44,358 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:26:59,138 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:26:59,138 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:28:13,205 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:28:13,205 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-28 18:29:49,066 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-28 18:29:49,066 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 09:13:13,040 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-29 09:13:13,041 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 09:26:57,974 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-29 09:26:57,975 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 09:30:02,031 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-29 09:30:02,031 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 09:35:50,614 [ERROR] src.core.memory.storage.postgresql:145: Error initializing PostgreSQL storage: 'ConnectionManager' object has no attribute 'get_pg_connection'
+2024-10-29 09:35:50,615 [ERROR] src.core.memory.storage.postgresql:145: Error initializing PostgreSQL storage: 'ConnectionManager' object has no attribute 'get_pg_connection'
+2024-10-29 09:35:50,617 [ERROR] src.core.memory.storage.postgresql:145: Error initializing PostgreSQL storage: 'ConnectionManager' object has no attribute 'get_pg_connection'
+2024-10-29 09:35:50,618 [ERROR] src.core.memory.storage.storage_manager:84: Failed to initialize PostgreSQL
+2024-10-29 09:35:50,619 [ERROR] __main__:83: Failed to initialize storage manager
+2024-10-29 09:38:34,196 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:38:34,197 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:38:34,199 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:38:34,203 [ERROR] src.core.memory.storage.storage_manager:84: Failed to initialize Redis
+2024-10-29 09:38:34,206 [ERROR] __main__:83: Failed to initialize storage manager
+2024-10-29 09:42:34,368 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:42:34,369 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:42:34,371 [ERROR] src.core.memory.storage.redis_cache:124: Error initializing Redis cache: 'ConnectionManager' object has no attribute 'get_redis_client'
+2024-10-29 09:42:34,373 [ERROR] src.core.memory.storage.storage_manager:84: Failed to initialize Redis
+2024-10-29 09:42:34,376 [ERROR] __main__:83: Failed to initialize storage manager
+2024-10-29 09:47:25,894 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-29 09:47:25,895 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 14:02:45,443 [ERROR] src.core.sheppard.tools.manager:87: Failed to register tool implementation: calculator
+2024-10-29 14:02:45,443 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 14:04:29,619 [ERROR] src.core.sheppard.tools.manager:161: Error registering tool calculator: object bool can't be used in 'await' expression
+2024-10-29 14:04:29,620 [ERROR] src.core.sheppard.tools.manager:89: Failed to register tool implementation: calculator
+2024-10-29 14:04:29,621 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 14:05:58,597 [ERROR] src.core.sheppard.tools.manager:95: Failed to register tool with TrustCall: calculator
+2024-10-29 14:05:58,598 [ERROR] src.core.sheppard.core:107: Failed to initialize tool manager
+2024-10-29 14:17:51,673 [ERROR] src.core.sheppard.tools.manager:394: Failed to parse tool analysis response
+2024-10-29 14:18:03,260 [ERROR] src.core.memory.storage.connection:76: No pool found for database: episodic
+2024-10-29 14:18:03,264 [ERROR] src.core.memory.storage.connection:76: No pool found for database: semantic
+2024-10-29 14:18:03,268 [ERROR] src.core.memory.storage.connection:76: No pool found for database: contextual
+2024-10-29 14:18:04,284 [ERROR] src.core.memory.storage.connection:76: No pool found for database: episodic
+2024-10-29 14:18:04,529 [ERROR] src.core.memory.storage.connection:76: No pool found for database: semantic
+2024-10-29 14:18:04,534 [ERROR] src.core.memory.storage.connection:76: No pool found for database: contextual
+2024-10-29 14:18:06,551 [ERROR] src.core.memory.storage.connection:76: No pool found for database: episodic
+2024-10-29 14:18:06,871 [ERROR] src.core.memory.storage.connection:76: No pool found for database: semantic
+2024-10-29 14:18:06,877 [ERROR] src.core.memory.storage.connection:76: No pool found for database: contextual
+2024-10-29 14:20:00,332 [ERROR] src.core.memory.storage.connection:38: No Redis client found for layer: ephemeral
+2024-10-29 19:43:25,672 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:43:25,674 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:51:29,190 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:51:29,193 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 23:34:02,303 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 23:34:02,306 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:26:30,360 [ERROR] system_checks: Error checking data directories: type object 'PathConfig' has no attribute 'initialize_directories'
+2024-10-30 00:26:30,403 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:26:30,407 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:29:12,458 [ERROR] system_checks: Error checking data directories: type object 'PathConfig' has no attribute 'initialize_directories'
+2024-10-30 00:29:12,503 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:29:12,507 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'

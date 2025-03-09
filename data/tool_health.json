@@ -1,0 +1,8 @@
+{
+  "last_check": "2024-10-27T22:07:41.214282",
+  "status": false,
+  "errors": [
+    "Schema manager is not properly initialized"
+  ],
+  "tool_status": {}
+}

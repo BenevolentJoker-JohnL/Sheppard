@@ -1,0 +1,79 @@
+2024-10-25 11:11:33,271 - INFO - Starting setup process...
+2024-10-25 11:11:33,271 - INFO - Installing necessary packages...
+2024-10-25 11:11:35,112 - INFO - Installing redis-server...
+2024-10-25 11:11:35,506 - INFO - Installing postgresql...
+2024-10-25 11:11:35,924 - INFO - Installing postgresql-contrib...
+2024-10-25 11:11:36,310 - INFO - Installing python3-psycopg2...
+2024-10-25 11:11:38,336 - INFO - Setting up Redis instances...
+2024-10-25 11:11:38,336 - INFO - Cleaning up existing Redis instances...
+2024-10-25 11:11:40,325 - INFO - Setting up Redis instance: ephemeral on port 6370
+2024-10-25 11:11:40,361 - ERROR - Failed to set up Redis
+2024-10-25 11:15:20,553 - INFO - Starting setup process...
+2024-10-25 11:15:20,553 - INFO - 
+Executing step: Installing packages
+2024-10-25 11:15:20,553 - INFO - Installing necessary packages...
+2024-10-25 11:15:22,407 - INFO - Installing redis-server...
+2024-10-25 11:15:22,800 - INFO - Installing postgresql...
+2024-10-25 11:15:23,176 - INFO - Installing postgresql-contrib...
+2024-10-25 11:15:23,569 - INFO - Installing python3-psycopg2...
+2024-10-25 11:15:23,942 - INFO - ✓ Completed: Installing packages
+2024-10-25 11:15:23,942 - INFO - 
+Executing step: Setting up Redis
+2024-10-25 11:15:23,942 - INFO - Setting up Redis instances...
+2024-10-25 11:15:23,942 - INFO - Cleaning up existing Redis instances...
+2024-10-25 11:15:25,958 - INFO - Setting up Redis instance: ephemeral on port 6370
+2024-10-25 11:15:28,732 - INFO - Setting up Redis instance: contextual on port 6371
+2024-10-25 11:15:31,512 - INFO - Setting up Redis instance: episodic on port 6372
+2024-10-25 11:15:34,390 - INFO - Setting up Redis instance: semantic on port 6373
+2024-10-25 11:15:37,333 - INFO - Setting up Redis instance: abstracted on port 6374
+2024-10-25 11:15:40,158 - INFO - ✓ Completed: Setting up Redis
+2024-10-25 11:15:40,158 - INFO - 
+Executing step: Setting up PostgreSQL
+2024-10-25 11:15:40,158 - INFO - Setting up PostgreSQL...
+2024-10-25 11:15:40,687 - ERROR - Error executing command: sudo -u postgres psql -c "DROP USER IF EXISTS sheppard;"
+2024-10-25 11:15:40,687 - ERROR - Error output: could not change directory to "/home/joker/Desktop/sheppard": Permission denied
+ERROR:  role "sheppard" cannot be dropped because some objects depend on it
+DETAIL:  privileges for database episodic_memory
+privileges for database semantic_memory
+privileges for database contextual_memory
+privileges for database general_memory
+privileges for database abstracted_memory
+6 objects in database episodic_memory
+8 objects in database semantic_memory
+8 objects in database contextual_memory
+6 objects in database general_memory
+8 objects in database abstracted_memory
+
+2024-10-25 11:15:40,756 - ERROR - Error executing command: sudo -u postgres psql -c "CREATE USER sheppard WITH SUPERUSER PASSWORD 'llama';"
+2024-10-25 11:15:40,756 - ERROR - Error output: could not change directory to "/home/joker/Desktop/sheppard": Permission denied
+ERROR:  role "sheppard" already exists
+
+2024-10-25 11:15:40,756 - INFO - Setting up database: episodic_memory
+2024-10-25 11:15:41,276 - INFO - Setting up database: semantic_memory
+2024-10-25 11:15:41,760 - INFO - Setting up database: contextual_memory
+2024-10-25 11:15:42,251 - INFO - Setting up database: general_memory
+2024-10-25 11:15:42,796 - INFO - Setting up database: abstracted_memory
+2024-10-25 11:15:43,277 - INFO - ✓ Completed: Setting up PostgreSQL
+2024-10-25 11:15:43,277 - INFO - 
+Executing step: Setting up ChromaDB
+2024-10-25 11:15:43,277 - INFO - Setting up ChromaDB...
+2024-10-25 11:15:43,516 - INFO - ✓ Completed: Setting up ChromaDB
+2024-10-25 11:15:43,517 - INFO - Verifying setup...
+2024-10-25 11:15:43,561 - INFO - ✓ Redis instance ephemeral (port 6370) verified
+2024-10-25 11:15:43,601 - INFO - ✓ Redis instance contextual (port 6371) verified
+2024-10-25 11:15:43,649 - INFO - ✓ Redis instance episodic (port 6372) verified
+2024-10-25 11:15:43,689 - INFO - ✓ Redis instance semantic (port 6373) verified
+2024-10-25 11:15:43,735 - INFO - ✓ Redis instance abstracted (port 6374) verified
+2024-10-25 11:15:43,803 - INFO - ✓ Database episodic_memory verified
+2024-10-25 11:15:43,872 - INFO - ✓ Database semantic_memory verified
+2024-10-25 11:15:43,931 - INFO - ✓ Database contextual_memory verified
+2024-10-25 11:15:43,994 - INFO - ✓ Database general_memory verified
+2024-10-25 11:15:44,060 - INFO - ✓ Database abstracted_memory verified
+2024-10-25 11:15:44,061 - INFO - ✓ ChromaDB directories verified
+2024-10-25 11:15:44,061 - INFO - 
+✓ Setup completed successfully!
+2024-10-25 11:15:44,061 - INFO - ✓ Redis instances running on ports 6370-6374
+2024-10-25 11:15:44,061 - INFO - ✓ PostgreSQL databases and tables created
+2024-10-25 11:15:44,061 - INFO - ✓ ChromaDB directories initialized
+2024-10-25 11:15:44,061 - INFO - Creating test data...
+2024-10-25 11:15:44,730 - INFO - ✓ Test data creation and cleanup successful

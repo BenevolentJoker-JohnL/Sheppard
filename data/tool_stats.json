@@ -1,0 +1,32 @@
+{
+  "calculate": {
+    "calls": 0,
+    "errors": 0,
+    "last_used": null,
+    "health_status": true
+  },
+  "search_web": {
+    "calls": 0,
+    "errors": 0,
+    "last_used": null,
+    "health_status": true
+  },
+  "summarize_text": {
+    "calls": 0,
+    "errors": 0,
+    "last_used": null,
+    "health_status": true
+  },
+  "analyze_sentiment": {
+    "calls": 0,
+    "errors": 0,
+    "last_used": null,
+    "health_status": true
+  },
+  "extract_entities": {
+    "calls": 0,
+    "errors": 0,
+    "last_used": null,
+    "health_status": true
+  }
+}

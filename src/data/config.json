@@ -1,0 +1,143 @@
+{
+  "db_urls": {
+    "episodic_memory": "postgresql://sheppard:1234@localhost:5432/episodic_memory",
+    "semantic_memory": "postgresql://sheppard:1234@localhost:5432/semantic_memory",
+    "contextual_memory": "postgresql://sheppard:1234@localhost:5432/contextual_memory",
+    "general_memory": "postgresql://sheppard:1234@localhost:5432/general_memory",
+    "abstracted_memory": "postgresql://sheppard:1234@localhost:5432/abstracted_memory"
+  },
+  "redis_config": {
+    "ephemeral": {
+      "host": "localhost",
+      "port": 6370,
+      "db": 0,
+      "max_memory": "100mb",
+      "max_memory_policy": "allkeys-lru"
+    },
+    "contextual": {
+      "host": "localhost",
+      "port": 6371,
+      "db": 0,
+      "max_memory": "100mb",
+      "max_memory_policy": "allkeys-lru"
+    },
+    "episodic": {
+      "host": "localhost",
+      "port": 6372,
+      "db": 0,
+      "max_memory": "100mb",
+      "max_memory_policy": "allkeys-lru"
+    },
+    "semantic": {
+      "host": "localhost",
+      "port": 6373,
+      "db": 0,
+      "max_memory": "100mb",
+      "max_memory_policy": "allkeys-lru"
+    },
+    "abstracted": {
+      "host": "localhost",
+      "port": 6374,
+      "db": 0,
+      "max_memory": "100mb",
+      "max_memory_policy": "allkeys-lru"
+    }
+  },
+  "memory_config": {
+    "cache_size": 1000,
+    "importance_threshold": 0.5,
+    "similarity_threshold": 0.7,
+    "retention_period_days": 30,
+    "vacuum_threshold": 10000,
+    "max_batch_size": 1000,
+    "cleanup_interval": 3600,
+    "max_memory_size": "2GB",
+    "embedding_batch_size": 32,
+    "max_context_length": 4000
+  },
+  "model_config": {
+    "main_chat": {
+      "name": "llama3.1",
+      "tag": "latest",
+      "context_length": 4096,
+      "temperature": 0.7
+    },
+    "short_context": {
+      "name": "llama3.2",
+      "tag": "latest",
+      "context_length": 2048,
+      "temperature": 0.7
+    },
+    "long_context": {
+      "name": "mistral-nemo",
+      "tag": "latest",
+      "context_length": 8192,
+      "temperature": 0.7
+    },
+    "embedding": {
+      "name": "nomic-embed-text",
+      "tag": "latest",
+      "embedding_dim": 768
+    }
+  },
+  "tool_config": {
+    "calculator": {
+      "enabled": true,
+      "timeout": 5,
+      "max_retries": 3,
+      "safe_operations": [
+        "abs",
+        "float",
+        "int",
+        "max",
+        "min",
+        "pow",
+        "round",
+        "sum"
+      ]
+    },
+    "search": {
+      "enabled": true,
+      "timeout": 10,
+      "max_retries": 3,
+      "max_results": 100,
+      "min_query_length": 3
+    },
+    "summarizer": {
+      "enabled": true,
+      "timeout": 15,
+      "max_retries": 3,
+      "max_length": 1000,
+      "min_length": 100
+    },
+    "sentiment": {
+      "enabled": true,
+      "timeout": 5,
+      "max_retries": 3,
+      "confidence_threshold": 0.6
+    },
+    "entity_extractor": {
+      "enabled": true,
+      "timeout": 10,
+      "max_retries": 3,
+      "entity_types": [
+        "person",
+        "organization",
+        "location",
+        "date",
+        "time"
+      ]
+    }
+  },
+  "directories": {
+    "base_dir": "/home/joker/Documents/sheppard/src",
+    "data_dir": "/home/joker/Documents/sheppard/src/data",
+    "conversations_dir": "/home/joker/Documents/sheppard/src/data/conversations",
+    "chroma_dir": "/home/joker/Documents/sheppard/src/data/chroma_persistence",
+    "embeddings_dir": "/home/joker/Documents/sheppard/src/data/embeddings",
+    "stats_dir": "/home/joker/Documents/sheppard/src/data/stats",
+    "tools_dir": "/home/joker/Documents/sheppard/src/data/tools",
+    "memory_dir": "/home/joker/Documents/sheppard/src/data/memory",
+    "log_dir": "logs"
+  }
+}

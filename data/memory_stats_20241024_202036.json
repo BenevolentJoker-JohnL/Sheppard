@@ -1,0 +1,20 @@
+{
+  "total_memories": 6,
+  "unique_memories": 0,
+  "memories_per_state": {
+    "active": 6
+  },
+  "cache_performance": {
+    "hits": 0,
+    "misses": 0,
+    "hit_ratio": 0
+  },
+  "embedding_stats": {
+    "total_embeddings": 0,
+    "failed_embeddings": 0,
+    "success_rate": 0
+  },
+  "average_importance": 0.0,
+  "state_transitions": {},
+  "last_cleanup": "2024-10-24T20:19:42.313134"
+}

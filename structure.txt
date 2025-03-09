@@ -1,0 +1,249 @@
+# Sheppard Phoenix Application Architecture
+
+## Project Structure
+
+```
+sheppard_phoenix/
+├── .env                       # Environment variables
+├── requirements.txt           # Python dependencies
+├── setup.py                   # Package installation script
+├── README.md                  # Project documentation
+├── main.py                    # Application entry point
+├── conversations/             # Stored conversations
+├── logs/                      # Application logs
+├── screenshots/               # Browser screenshots
+├── chroma_storage/            # ChromaDB vector storage
+├── data/                      # Application data
+├── temp/                      # Temporary files
+└── src/                       # Source code
+    ├── __init__.py
+    ├── config/                # Configuration
+    │   ├── __init__.py
+    │   ├── settings.py        # Application settings
+    │   └── logging.py         # Logging configuration
+    ├── core/                  # Core application
+    │   ├── __init__.py
+    │   ├── chat.py            # Main chat application
+    │   ├── base_exceptions.py # Base exception classes
+    │   ├── exceptions.py      # Application exceptions
+    │   ├── commands.py        # Command handling
+    │   ├── constants.py       # System constants
+    │   └── system.py          # System initialization
+    ├── llm/                   # LLM integration
+    │   ├── __init__.py
+    │   ├── client.py          # Ollama client
+    │   ├── models.py          # LLM data models
+    │   ├── exceptions.py      # LLM exceptions
+    │   └── validators.py      # LLM output validation
+    ├── memory/                # Memory system
+    │   ├── __init__.py
+    │   ├── models.py          # Memory data models
+    │   ├── manager.py         # Memory management
+    │   ├── processor.py       # Memory processing
+    │   ├── interactions.py    # Conversation memory
+    │   ├── exceptions.py      # Memory exceptions
+    │   ├── memory_integration.py # Memory integration
+    │   ├── utils.py           # Memory utilities
+    │   └── stores/            # Memory storage backends
+    │       ├── __init__.py
+    │       ├── base.py        # Base storage class
+    │       ├── redis.py       # Redis storage
+    │       └── chroma.py      # ChromaDB storage
+    ├── preferences/           # User preferences
+    │   ├── __init__.py
+    │   ├── models.py          # Preference models
+    │   ├── store.py           # Preference storage
+    │   ├── processors.py      # Preference processing
+    │   ├── validator.py       # Preference validation
+    │   ├── extractors.py      # Preference extraction
+    │   ├── exceptions.py      # Preference exceptions
+    │   └── schemas.py         # Preference schemas
+    ├── research/              # Research system
+    │   ├── __init__.py
+    │   ├── config.py          # Research configuration
+    │   ├── system.py          # Research system
+    │   ├── models.py          # Research data models
+    │   ├── enums.py           # Research enumerations
+    │   ├── exceptions.py      # Research exceptions
+    │   ├── task_manager.py    # Research task management
+    │   ├── browser_manager.py # Browser management
+    │   ├── browser_control.py # Browser control
+    │   ├── content_processor.py # Content processing
+    │   ├── extractors.py      # Data extraction
+    │   ├── memory_integration.py # Research memory integration
+    │   ├── processors.py      # Data processing
+    │   ├── pipeline.py        # Research pipeline
+    │   └── validators.py      # Research validation
+    ├── schemas/               # Schema validation
+    │   ├── __init__.py
+    │   ├── validation_schemas.py # Validation schemas
+    │   ├── validator.py       # Schema validator
+    │   └── exceptions.py      # Schema exceptions
+    └── utils/                 # Utilities
+        ├── __init__.py
+        ├── console.py         # Console output
+        ├── text_processing.py # Text processing
+        └── validation.py      # Data validation
+```
+
+## Module Dependencies
+
+```
++----------------+      +----------------+      +----------------+
+|    src/core    |----->|  src/research  |----->|  src/memory    |
++----------------+      +----------------+      +----------------+
+        |                      |                       |
+        |                      |                       |
+        +--------------------->+                       |
+        |                      |                       |
+        +----------------------------------------------+
+        |                      |                       |
+        v                      v                       v
++----------------+      +----------------+      +----------------+
+|    src/llm     |<-----|   src/utils    |----->| src/preferences|
++----------------+      +----------------+      +----------------+
+                               |
+                               v
+                        +----------------+
+                        |   src/schemas  |
+                        +----------------+
+                               |
+                               v
+                        +----------------+
+                        |   src/config   |
+                        +----------------+
+```
+
+## Key Class Relationships
+
+1. **ChatApp** (core/chat.py)
+   - Uses **ResearchSystem** for research capabilities
+   - Uses **MemoryManager** for conversation memory
+   - Uses **CommandHandler** for command processing
+   - Uses **OllamaClient** for LLM interactions
+   - Uses **PreferenceStore** for user preferences
+
+2. **ResearchSystem** (research/system.py)
+   - Uses **BrowserManager** for web interaction
+   - Uses **ContentProcessor** for content analysis
+   - Uses **TaskManager** for research task management
+   - Uses **MemoryManager** for storing research results
+
+3. **BrowserManager** (research/browser_manager.py)
+   - Manages browser instances
+   - Integrates with **FirecrawlClient** for web scraping
+   - Uses **AutonomousBrowser** for advanced navigation
+
+4. **MemoryManager** (memory/manager.py)
+   - Manages embeddings and retrieval
+   - Integrates with **OllamaClient** for embeddings
+   - Uses various storage backends (ChromaDB, Redis)
+
+5. **PreferenceStore** (preferences/store.py)
+   - Manages user preferences
+   - Uses preference extractors and validators
+   - Integrates with memory system for persistent storage
+
+6. **OllamaClient** (llm/client.py)
+   - Provides interface to Ollama API
+   - Manages model loading and generation
+   - Handles embedding generation
+
+## Core Workflows
+
+### Chat Interaction Workflow
+1. User sends message to **ChatApp**
+2. **ChatApp** processes the message:
+   - Checks for commands via **CommandHandler**
+   - Retrieves relevant context via **MemoryManager**
+   - Applies user preferences via **PreferenceStore**
+   - Generates response via **OllamaClient**
+   - Stores interaction in memory
+   - Returns response to user
+
+### Research Workflow
+1. User initiates research via **/research** command
+2. **CommandHandler** passes the request to **ResearchSystem**
+3. **ResearchSystem** creates a task via **TaskManager**:
+   - **BrowserManager** searches for content
+   - **ContentProcessor** extracts and analyzes content
+   - Results are processed via **Processors**
+   - Formatted results are stored in memory
+   - Results are returned to the user
+
+### Memory Integration Workflow
+1. User message is processed by **ChatApp**
+2. **MemoryManager** searches for relevant context via vector storage
+3. **MemoryProcessor** formats and combines context
+4. Combined input is sent to LLM for response
+5. User and assistant messages are stored in memory
+6. **PreferenceExtractor** identifies and stores preferences
+
+### Browser Automation
+1. **BrowserManager** handles URL navigation and session management
+2. **AutonomousBrowser** provides self-healing capabilities
+3. Content is extracted and processed by **ContentProcessor**
+4. **FirecrawlClient** is used as a fallback for extraction
+
+## Configuration Options
+
+- **AppSettings** (config/settings.py): Application-wide settings
+- **ResearchConfig** (research/config.py): Research system configuration
+- **BrowserConfig**: Browser automation configuration
+- **NavigationConfig**: Web navigation configuration
+- **ScrapingConfig**: Web scraping configuration
+- **ContentProcessingConfig**: Content processing configuration
+- **LoggingConfig** (config/logging.py): Logging configuration
+- **MemoryConfig**: Memory system configuration
+- **PreferenceConfig**: User preferences configuration
+
+## Integration Points
+
+1. **Ollama Integration**
+   - Used for embeddings and completions
+   - Integrated via **OllamaClient**
+   - Provides language model capabilities
+   - Handles streaming responses
+
+2. **Firecrawl Integration**
+   - Used for web scraping and content extraction
+   - Integrated via Firecrawl Python SDK
+   - Provides robust web scraping capabilities
+   - Fallback for browser automation
+
+3. **Memory Storage**
+   - ChromaDB: Vector database for embeddings
+   - Redis: Fast key-value storage
+   - Manages context and conversation history
+   - Provides preference persistence
+
+4. **Rich Console**
+   - Enhanced terminal output
+   - Progress indicators and formatted text
+   - Tables and panels for data display
+   - Syntax highlighting for code
+
+## Error Handling
+
+- Comprehensive exception hierarchy based on **ChatSystemError**
+- Domain-specific exceptions for all subsystems
+- Automatic retry mechanisms for transient errors
+- Self-healing capabilities in **AutonomousBrowser**
+- Graceful degradation for component failures
+
+## Command System
+
+- Commands start with "/" (e.g., "/research", "/help")
+- Command parsing and dispatch via **CommandHandler**
+- Rich output formatting with the **rich** library
+- Command history tracking
+- Contextual help system
+
+## Asset Management
+
+- **conversations/**: Stored conversation histories
+- **screenshots/**: Browser screenshots directory
+- **chroma_storage/**: ChromaDB vector storage
+- **logs/**: Application log files
+- **data/**: Application data storage
+- **temp/**: Temporary file storage

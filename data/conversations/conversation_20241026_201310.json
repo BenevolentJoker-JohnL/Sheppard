@@ -1,0 +1,15 @@
+{
+  "timestamp": "2024-10-26T20:13:10.541489",
+  "history": [
+    {
+      "role": "user",
+      "content": "Hello. My favorite color is dog, my ideal destination is ruling ai, and my favorite flavor is purple. I know this doesnt make any sense. thats okay. This is a test for the application Im making.",
+      "timestamp": "2024-10-26T20:09:08.206595"
+    },
+    {
+      "role": "assistant",
+      "content": "I encountered an unexpected issue. Please try again.",
+      "timestamp": "2024-10-26T20:09:08.206604"
+    }
+  ]
+}

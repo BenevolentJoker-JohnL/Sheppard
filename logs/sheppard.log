@@ -1,0 +1,49 @@
+2024-10-29 19:38:32,752 [INFO] root: Configuration initialized successfully
+2024-10-29 19:38:53,038 [INFO] root: Configuration initialized successfully
+2024-10-29 19:43:24,406 [INFO] root: Configuration initialized successfully
+2024-10-29 19:43:25,649 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 19:43:25,667 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 19:43:25,672 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:43:25,672 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 19:43:25,673 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-29 19:43:25,674 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:43:25,675 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 19:43:25,675 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-29 19:51:28,653 [INFO] root: Configuration initialized successfully
+2024-10-29 19:51:29,163 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 19:51:29,184 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 19:51:29,190 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:51:29,191 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 19:51:29,192 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-29 19:51:29,193 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 19:51:29,194 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 19:51:29,194 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-29 23:34:01,379 [INFO] root: Configuration initialized successfully
+2024-10-29 23:34:02,281 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 23:34:02,299 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-29 23:34:02,303 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 23:34:02,304 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 23:34:02,305 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-29 23:34:02,306 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-29 23:34:02,307 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-29 23:34:02,307 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-30 00:26:29,949 [INFO] root: Configuration initialized successfully
+2024-10-30 00:26:30,338 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-30 00:26:30,358 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-30 00:26:30,360 [ERROR] system_checks: Error checking data directories: type object 'PathConfig' has no attribute 'initialize_directories'
+2024-10-30 00:26:30,403 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:26:30,404 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-30 00:26:30,405 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-30 00:26:30,407 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:26:30,408 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-30 00:26:30,409 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-30 00:29:12,056 [INFO] root: Configuration initialized successfully
+2024-10-30 00:29:12,438 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-30 00:29:12,456 [INFO] httpx: HTTP Request: GET http://localhost:11434/api/tags "HTTP/1.1 200 OK"
+2024-10-30 00:29:12,458 [ERROR] system_checks: Error checking data directories: type object 'PathConfig' has no attribute 'initialize_directories'
+2024-10-30 00:29:12,503 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:29:12,504 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-30 00:29:12,505 [INFO] src.core.memory.storage.connection: Connection cleanup completed
+2024-10-30 00:29:12,507 [ERROR] src.core.memory.storage.vector_store: Error cleaning up vector store: type object 'DatabaseConfig' has no attribute 'DATA_DIR'
+2024-10-30 00:29:12,508 [INFO] src.core.memory.storage.connection: Starting connection cleanup
+2024-10-30 00:29:12,508 [INFO] src.core.memory.storage.connection: Connection cleanup completed

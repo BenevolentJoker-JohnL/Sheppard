@@ -1,0 +1,10 @@
+[
+  {
+    "role": "user",
+    "content": "WHAT IS MY FAVORITE COLOR"
+  },
+  {
+    "role": "assistant",
+    "content": "I'm glad you asked! I don't actually know your favorite color, and that's completely okay. If you'd like to share, I'd be happy to hear about it!\n\n(Note: This response is similar to the Episodic approach mentioned earlier.)"
+  }
+]
