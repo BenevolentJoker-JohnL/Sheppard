@@ -1,3 +1,11 @@
+First and foremost, a special thanks to:
+
+Dallan Loomis: without your interactions and heads up, I would still somewhat be lost and trying to figure things out more some. 
+My parents: without your support, I would be dead in the water.
+and My son: without you, I would be dead period. 
+
+
+
 Hi guys, 
 
 I have been studying and tinkering with the AI space for the past 2 years. I do not actually know how to code, but I am learning, and understand enough about the softeware development process, along with knowing how to manipulate AI that I decided to give my hand at software development and create my own AI Agent app. Yes, everything you will interact with when you download and install my application *is* AI generated, *however*, it was generated under my express *supervision*. There currently is a massive *innundation* of AI generated *crap* (and yes I *do* mean *crap*) that is often just assumed as crap because well... it *is* crap, because a *vast majority* of the AI generated content is put out with *zero human in the loop interaction*. This here, should stand as a testament and as a check, to show that quality AI content *can* be produced, it just needs to involve humans in the process. I created this entire thing (and will continue to build upon this) without ANY sort of formal education in coding, or programming. Everything you see is as the result of sheer will and determination and a little bit of know how with an open mind. 
