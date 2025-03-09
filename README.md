@@ -5,7 +5,7 @@ Dallan Loomis (https://github.com/DallanL): without your interactions and heads 
 My parents: without your support, I would be dead in the water.
 
 and My son: without you, I would be dead period. 
-
+______________________________________________________________
 Benchmark Results Summary:
 Research Effectiveness: 71.4/100
 Memory Effectiveness: 100.0/100
@@ -28,7 +28,10 @@ System Integration (73.3/100):
 Overall System Performance (82.0/100):
   - GOOD: System is performing well overall.
   - Focus on fine-tuning specific capabilities for optimal performance.
-*On an i9-12900k 32gb 6000mhz DDR5, a4000 16gb GPU, running PopOS!
+**THESE RESULTS ONLY REFLECT THE RESEARCH FUNCTION OF THE APPLICATION
+
+*On an i9-12900k 32gb 6000mhz DDR5, a4000 16gb GPU, running PopOS on 4tb gen 4! silicone power m2.
+______________________________________________________________
 
 Hi guys, 
 
@@ -36,7 +39,9 @@ I have been studying and tinkering with the AI space for the past 2 years. I do 
 
 I created this entire thing (and will continue to build upon this) without ANY sort of formal education in coding, or programming. Everything you see is as the result of sheer will and determination and a little bit of know how with an open mind. For those wondering, Claude is primarily used or has been used in the construction of this application. This originally was created as a bit of an experiment in replicating a more natural human memory recall, and I expanded this out as I saw fit. 
 
-Unlike other AI agent applications that utilize a create your own agent with a 1:1 model to role workflows, I have taken a bit of a different approach: what if each model just simply is a *function of* the agent? As mentioned previously, this was originally created as a means to try and simulate more natural recall and memory mirroring that of humans. The system as it stands is divided up of 4 (see 5) models. You have a main chat model, a short context model, a long context model, and an embedding model. The memory system is meant so that when there is user input, the system queries the system for relevant emebeddings and then returns those embeddings to a relevant context handling model which summarizes the content of the embeddings and then passes it along to the main chat model as context upon which the main chat model responds to or interacts with the user input. 
+Unlike other AI agent applications that utilize a "create your own agent" with a 1:1 model to role workflows, I have taken a bit of a different approach: what if each model just simply is a *function of* the agent? 
+
+As mentioned previously, this was originally created as a means to try and simulate more natural recall and memory mirroring that of humans. The system as it stands is divided up of 4 (see 5) models. You have a main chat model, a short context model, a long context model, and an embedding model. The memory system is meant so that when there is user input, the system queries the system for relevant emebeddings and then returns those embeddings to a relevant context handling model which summarizes the content of the embeddings and then passes it along to the main chat model as context upon which the main chat model responds to or interacts with the user input. 
 
 
 This is my attempt to work myself into a better position as I *am* currently looking for work and trying to land a position within the AI field, specifically as an AI applications designer. 
