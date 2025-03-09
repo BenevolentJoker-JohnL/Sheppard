@@ -569,7 +569,7 @@ Sheppard follows a modular architecture with three main systems:
 
 Logs are stored in the `logs/` directory by default. Set `LOG_LEVEL=DEBUG` for verbose logging.
 
-**IN PROGRESS**
+**IN PROGRESS**------------------------------------------------------------
 ## Uploading Multiple Files and Directories as a Single Project
 
 ### Method 1: Import Existing Directory Structure
@@ -682,7 +682,7 @@ Behind the scenes, the Code Arena:
 5. Creates a virtual environment specific to this project for proper execution
 
 Once your files are imported, you can interact with them through commands like:
-**IN PROGRESS** 
+**IN PROGRESS**------------------------------------------------------------
 ```
 # Examine a specific file
 /code file load src/memory/manager.py
