@@ -1,6 +1,6 @@
 First and foremost, a special thanks to:
 
-Dallan Loomis: without your interactions and heads up, I would still somewhat be lost and trying to figure things out more some. 
+Dallan Loomis (https://github.com/DallanL): without your interactions and heads up, I would still somewhat be lost and trying to figure things out more some. 
 
 My parents: without your support, I would be dead in the water.
 
@@ -10,11 +10,12 @@ and My son: without you, I would be dead period.
 
 Hi guys, 
 
-I have been studying and tinkering with the AI space for the past 2 years. I do not actually know how to code, but I am learning, and understand enough about the softeware development process, along with knowing how to manipulate AI that I decided to give my hand at software development and create my own AI Agent app. Yes, everything you will interact with when you download and install my application *is* AI generated, *however*, it was generated under my express *supervision*. There currently is a massive *innundation* of AI generated *crap* (and yes I *do* mean *crap*) that is often just assumed as crap because well... it *is* crap, because a *vast majority* of the AI generated content is put out with *zero human in the loop interaction*. This here, should stand as a testament and as a check, to show that quality AI content *can* be produced, it just needs to involve humans in the process. I created this entire thing (and will continue to build upon this) without ANY sort of formal education in coding, or programming. Everything you see is as the result of sheer will and determination and a little bit of know how with an open mind. 
+I have been studying and tinkering with the AI space for the past 2 years. I do not actually know how to code, but I am learning, and understand enough about the softeware development process, along with knowing how to manipulate AI that I decided to give my hand at software development and create my own AI Agent app. Yes, everything you will interact with when you download and install my application *is* AI generated, *however*, it was generated under my express *supervision*. There currently is a massive *innundation* of AI generated *crap* (and yes I *do* mean *crap*) that is often just assumed as crap because well... it *is* crap, because a *vast majority* of the AI generated content is put out with *zero human in the loop interaction*. This here, should stand as a testament and as a check, to show that quality AI content *can* be produced, it just needs to involve humans in the process. 
 
-Unlike other AI agent applications that utilize a create your own agent with a 1:1 model to role workflows, I have taken a bit of a different approach: what if each model just simply is a *function of* the agent?
+I created this entire thing (and will continue to build upon this) without ANY sort of formal education in coding, or programming. Everything you see is as the result of sheer will and determination and a little bit of know how with an open mind. For those wondering, Claude is primarily used or has been used in the construction of this application. This originally was created as a bit of an experiment in replicating a more natural human memory recall, and I expanded this out as I saw fit. 
 
-This originally was created as a bit of an experiment in replicating a more natural human memory recall, and I expanded this out as I saw fit. 
+Unlike other AI agent applications that utilize a create your own agent with a 1:1 model to role workflows, I have taken a bit of a different approach: what if each model just simply is a *function of* the agent? As mentioned previously, this was originally created as a means to try and simulate more natural recall and memory mirroring that of humans. The system as it stands is divided up of 4 (see 5) models. You have a main chat model, a short context model, a long context model, and an embedding model. The memory system is meant so that when there is user input, the system queries the system for relevant emebeddings and then returns those embeddings to a relevant context handling model which summarizes the content of the embeddings and then passes it along to the main chat model as context upon which the main chat model responds to or interacts with the user input. 
+
 
 This is my attempt to work myself into a better position as I *am* currently looking for work and trying to land a position within the AI field, specifically as an AI applications designer. 
 If you, or someone you know is hiring, please do not hesitate to reach out. I can be reached at:
@@ -23,8 +24,13 @@ benevolentjoker@gmail.com.
 Serious inquiries only. 
 
 I will be expanding upon this application and building out features. I plan on dual licensing a majority of what I seek to develop and release as there should be a good few features that big data/Big AI can benefit/utilize. 
+
 In general, this is meant to democratize AI as a whole and turn what software big data/IT has been utilizing for years, and turning it over to the average individual. 
 That, and to show the world that with just a *little* knowledge, and the right drive you too can accomplish *anything*. 
+
+Shout out to William FH aka hinthornw (https://github.com/hinthornw)  for trustcall (https://github.com/hinthornw/trustcall) -- this is the basis upon which later functions of the application will be based off of for autonomous tool creation later on as well as for validation of the memory system. 
+
+Also shout out to those at mendableai for creating firecrawl which is the primary basis for how the research system conducts its workflow to an extent. Without firecrawl, the research function would basically still be in development. 
 # Sheppard Agency
 
 ## Overview
@@ -131,6 +137,7 @@ Ensure Ollama is running locally and pull the required models:
 ollama pull mannix/dolphin-2.9-llama3-8b:latest
 ollama pull mxbai-embed-large
 ollama pull Azazel-AI/llama-3.2-1b-instruct-abliterated.q8_0
+ollama pull llama3.1:latest
 ```
 
 6. Set up directory structure:
