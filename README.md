@@ -28,6 +28,7 @@ System Integration (73.3/100):
 Overall System Performance (82.0/100):
   - GOOD: System is performing well overall.
   - Focus on fine-tuning specific capabilities for optimal performance.
+*On an i9-12900k 32gb 6000mhz DDR5, a4000 16gb GPU, running PopOS!
 
 Hi guys, 
 
