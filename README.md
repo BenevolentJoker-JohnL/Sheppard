@@ -138,6 +138,7 @@ ollama pull mannix/dolphin-2.9-llama3-8b:latest
 ollama pull mxbai-embed-large
 ollama pull Azazel-AI/llama-3.2-1b-instruct-abliterated.q8_0
 ollama pull llama3.1:latest
+ollama pull krith/mistral-nemo-instruct-2407-abliterated:IQ3_M
 ```
 
 6. Set up directory structure:
